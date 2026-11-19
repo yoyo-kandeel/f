@@ -3107,7 +3107,7 @@ function syncIcons(){const update=()=>document.querySelectorAll('.material-symbo
 const KEY='our-love-story:personal:v1', HEART="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' rx='30' fill='%234A0E17'/%3E%3Cpath d='M100 160 36 98C-1 48 65 12 100 63c35-51 101-15 64 35Z' fill='%23A25768' stroke='%23D4AF37' stroke-width='3'/%3E%3C/svg%3E";
 const $=id=>document.getElementById(id);
 const FIELDS={
-couple:[['partnerName1','الاسم الأول','text',true],['partnerName2','الاسم الثاني','text',true],['startLocal','تاريخ ووقت بداية العلاقة (بتوقيت جهازك)','datetime-local',true],['coverPhoto1','صورة الاسم الأول','image'],['coverPhoto2','صورة الاسم الثاني','image'],['quoteMain','عنوان الترحيب','text'],['quoteSub','رسالة الترحيب','textarea'],['finalQuote','رسالة الختام','textarea']],
+couple:[['partnerName1','الاسم الأول','text',true],['partnerName2','الاسم الثاني','text',true],['startDate','تاريخ بداية العلاقة','date',true],['startTime','وقت البداية (اختياري؛ بتوقيت جهازك)','time'],['coverPhoto1','صورة الاسم الأول','image'],['coverPhoto2','صورة الاسم الثاني','image'],['quoteMain','عنوان الترحيب','text'],['quoteSub','رسالة الترحيب','textarea'],['finalQuote','رسالة الختام','textarea']],
 memories:[['title','عنوان الذكرى','text',true],['date','تاريخ الذكرى','date'],['message','تفاصيل الذكرى','textarea'],['image','صورة الذكرى','image']],
 photos:[['url','الصورة','image',true],['caption','وصف الصورة','text']],
 reasons:[['title','سبب الحب','text',true],['description','تفاصيل السبب','textarea']],
@@ -3144,7 +3144,7 @@ function field(spec,value=''){
  input.dataset.field=key;input.name=key;if(type!=='textarea')input.type=type==='image'?'url':type;
  input.value=type==='image'&&String(value).startsWith('data:')?'':value||'';
  if(type!=='image')input.required=!!required;
- if(type==='datetime-local'){const d=new Date(Date.now()-new Date().getTimezoneOffset()*60000);input.max=d.toISOString().slice(0,16)}
+ if(key==='startDate'){const d=new Date(Date.now()-new Date().getTimezoneOffset()*60000);input.max=d.toISOString().slice(0,10)}
  if(type==='text'||type==='textarea')input.maxLength=type==='textarea'?3000:150;
  wrap.append(input);
  if(type==='image'){
@@ -3175,7 +3175,8 @@ function readFields(root){
 function collect(){
  if(!$('story-form').reportValidity())throw Error('أكمل البيانات المطلوبة أولًا.');
  const c=readFields($('couple-fields')), extra=readFields($('extra-fields'));
- if(!c.startLocal||!Number.isFinite(+new Date(c.startLocal))||+new Date(c.startLocal)>Date.now())throw Error('اختر تاريخ بداية صحيحًا لا يتجاوز الوقت الحالي.');
+ c.startLocal=c.startDate+'T'+(c.startTime||'00:00');
+ if(!c.startDate||!Number.isFinite(+new Date(c.startLocal))||+new Date(c.startLocal)>Date.now())throw Error('اختر تاريخ بداية صحيحًا لا يتجاوز الوقت الحالي.');
  c.storyStartDate=new Date(c.startLocal).toISOString();
  const raw={couple:c,surprise:{secretMessage:extra.secretMessage,giftCode:extra.giftCode},music:{src:extra.musicUrl,title:extra.musicTitle}};
  if(extra.musicUrl&&!safeMedia(extra.musicUrl,false))throw Error('رابط الموسيقى يجب أن يبدأ بـ HTTPS.');
@@ -3186,19 +3187,21 @@ function collect(){
 function baseURL(){const u=new URL(location.href);u.hash='';u.search='';return u}
 function setupEditor(draft,err){
  $('setup-page').hidden=false;$('welcome-screen').hidden=true;$('main-experience').hidden=true;
- const c=draft?.couple||{};for(const spec of FIELDS.couple)$('couple-fields').append(field(spec,c[spec[0]]));
+ const c={...(draft?.couple||{})};c.startDate=c.startLocal?.slice(0,10)||'';c.startTime=c.startLocal?.slice(11,16)||'';for(const spec of FIELDS.couple)$('couple-fields').append(field(spec,c[spec[0]]));
  const e={secretMessage:draft?.surprise?.secretMessage,giftCode:draft?.surprise?.giftCode,musicUrl:draft?.music?.src,musicTitle:draft?.music?.title};
  for(const spec of FIELDS.extra)$('extra-fields').append(field(spec,e[spec[0]]));
  for(const g of groups)for(const item of draft?.[g]||[])addRow(g,item);
  document.querySelectorAll('[data-add]').forEach(b=>b.onclick=()=>addRow(b.dataset.add));
  $('story-form').onsubmit=ev=>{ev.preventDefault();try{const d=collect();if(!saveDraft(d))throw Error('تعذر حفظ المسودة في المتصفح. يمكنك تنزيل النسخة الشخصية بدلًا من ذلك.');location.href=baseURL().href}catch(e){status(e.message)}};
  $('share-story').onclick=()=>{try{const d=collect();const saved=saveDraft(d);if(JSON.stringify(d).includes('data:image/'))throw Error('الصور المرفوعة من الجهاز تحتاج نسخة HTML شخصية. استخدم روابط HTTPS بدلًا منها لإنشاء رابط مشاركة.');if(location.protocol==='file:')throw Error('افتح الموقع المنشور على GitHub Pages لإنشاء رابط يعمل عند الآخرين.');const u=baseURL();u.hash='story='+encodeStory(d);if(u.href.length>12000)throw Error('الرابط أطول من الحد الموصى به. استخدم النسخة الشخصية أو قلّل النصوص.');$('share-url').value=u.href;$('share-result').hidden=false;status((saved?'تم حفظ المسودة. ':'')+'الرابط جاهز للنسخ. أي تغيير لاحق يحتاج رابطًا جديدًا.')}catch(e){$('share-result').hidden=true;status(e.message)}};
+ $('story-form').addEventListener('input',e=>{if(e.target.id!=='share-url')$('share-result').hidden=true});
  $('copy-share').onclick=async()=>{try{await navigator.clipboard.writeText($('share-url').value);status('تم نسخ الرابط.')}catch{$('share-url').select();status('انسخ الرابط المحدد يدويًا.')}};
- $('export-story').onclick=async()=>{try{const d=collect();saveDraft(d);const r=await fetch(baseURL().href);if(!r.ok)throw Error('تعذر تحميل قالب الموقع.');const source=await r.text();const json=JSON.stringify(d).replaceAll('<','\\u003c');const marker=/<script type="application\/json" id="embedded-story">[\s\S]*?<\/script>/;if(!marker.test(source))throw Error('قالب التصدير غير متاح.');const html=source.replace(marker,'<script type="application/json" id="embedded-story">'+json+'<'+'/script>');const url=URL.createObjectURL(new Blob([html],{type:'text/html;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='our-love-story.html';a.click();setTimeout(()=>URL.revokeObjectURL(url),30000);status('تم تجهيز النسخة الشخصية. يمكن فتحها دون موقع، وإرسالها كملف HTML.')}catch(e){status('تعذر التصدير: '+e.message)}};
+ $('export-story').onclick=async()=>{try{const d=collect();saveDraft(d);const r=await fetch(baseURL().href);if(!r.ok)throw Error('تعذر تحميل قالب الموقع.');const source=await r.text();const json=JSON.stringify(d).replaceAll('<','\\u003c');const marker=/<script type="application\/json" id="embedded-story">[\s\S]*?<\/script>/;if(!marker.test(source))throw Error('قالب التصدير غير متاح.');const html=source.replace(marker,()=>'<script type="application/json" id="embedded-story">'+json+'<'+'/script>');const url=URL.createObjectURL(new Blob([html],{type:'text/html;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='our-love-story.html';a.click();setTimeout(()=>URL.revokeObjectURL(url),30000);status('تم تجهيز النسخة الشخصية. يمكن فتحها دون موقع، وإرسالها كملف HTML.')}catch(e){status('تعذر التصدير: '+e.message)}};
  $('reset-story').onclick=()=>{if(confirm('هل تريد حذف مسودتك من هذا المتصفح؟')){try{localStorage.removeItem(KEY)}catch{}location.href=baseURL().href}};
  if(err)status(err);
 }
 function finishStory(c){
+ const date=document.createElement('p');date.className='text-gold-light text-body-sm text-center mb-3';const day=c.couple.startLocal?.slice(0,10)||c.couple.storyStartDate.slice(0,10);date.textContent='بداية حكايتنا: '+day;date.dir='auto';$('counter-days').parentElement.parentElement.before(date);
  const hiddenGroups={memories:!c.memories.length,album:!c.photos.length,reasons:!c.reasons.length,letters:!c.letters.length,dreams:!c.dreams.length,surprise:!c.surprise.secretMessage&&!c.surprise.giftCode};
  for(const [id,hide] of Object.entries(hiddenGroups)){if(hide){$(id).hidden=true;document.querySelectorAll('a[href="#'+id+'"]').forEach(a=>a.hidden=true)}}
  if(!c.surprise.giftCode)$('gift-code').parentElement.hidden=true;
