@@ -1,0 +1,3219 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Love Story — حكايتنا ❤️</title>
+<!-- Tailwind CSS & Design System Config -->
+<!-- Google Fonts: Cairo for Arabic, Great Vibes for romantic English calligraphy -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&amp;family=Great+Vibes&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Icons -->
+<!-- Dedicated CSS -->
+<style>/*! tailwindcss v4.1.10 | MIT License | https://tailwindcss.com */
+@layer properties;
+:root, :host {
+  --font-sans: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+  --color-white: #fff;
+  --spacing: 0.25rem;
+  --container-md: 28rem;
+  --container-xl: 36rem;
+  --container-2xl: 42rem;
+  --container-3xl: 48rem;
+  --container-6xl: 72rem;
+  --text-xs: 0.75rem;
+  --text-xs--line-height: calc(1 / 0.75);
+  --text-sm: 0.875rem;
+  --text-sm--line-height: calc(1.25 / 0.875);
+  --text-base: 1rem;
+  --text-base--line-height: calc(1.5 / 1);
+  --text-lg: 1.125rem;
+  --text-lg--line-height: calc(1.75 / 1.125);
+  --text-xl: 1.25rem;
+  --text-xl--line-height: calc(1.75 / 1.25);
+  --text-2xl: 1.5rem;
+  --text-2xl--line-height: calc(2 / 1.5);
+  --text-8xl: 6rem;
+  --text-8xl--line-height: 1;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --tracking-wide: 0.025em;
+  --tracking-wider: 0.05em;
+  --leading-tight: 1.25;
+  --leading-relaxed: 1.625;
+  --radius-xl: 32px;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --animate-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  --animate-bounce: bounce 1s infinite;
+  --blur-sm: 8px;
+  --blur-md: 12px;
+  --blur-lg: 16px;
+  --blur-xl: 24px;
+  --blur-2xl: 40px;
+  --blur-3xl: 64px;
+  --aspect-video: 16 / 9;
+  --default-transition-duration: 150ms;
+  --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --default-font-family: var(--font-sans);
+  --default-mono-font-family: var(--font-mono);
+  --color-accent: #D4AF37;
+  --color-gold-light: #F3E5AB;
+  --color-burgundy: #4A0E17;
+  --color-burgundy-deep: #1A0609;
+  --color-dusty-rose: #A25768;
+  --color-blush: #F9EAE1;
+  --color-parchment: #FFFDF9;
+  --font-headline: "Cairo",sans-serif;
+  --font-body: "Cairo",sans-serif;
+  --font-script: "Great Vibes",sans-serif;
+  --text-display-lg: 48px;
+  --text-display-lg--line-height: 58px;
+  --text-display-lg--font-weight: 700;
+  --text-display-lg--letter-spacing: -0.5px;
+  --text-display-lg-mobile: 32px;
+  --text-display-lg-mobile--line-height: 40px;
+  --text-display-lg-mobile--font-weight: 700;
+  --text-display-lg-mobile--letter-spacing: -0.25px;
+  --text-headline-lg: 36px;
+  --text-headline-lg--line-height: 44px;
+  --text-headline-lg--font-weight: 700;
+  --text-headline-lg--letter-spacing: -0.25px;
+  --text-headline-lg-mobile: 26px;
+  --text-headline-lg-mobile--line-height: 34px;
+  --text-headline-lg-mobile--font-weight: 700;
+  --text-headline-lg-mobile--letter-spacing: -0.2px;
+  --text-headline-md: 24px;
+  --text-headline-md--line-height: 32px;
+  --text-headline-md--font-weight: 600;
+  --text-headline-sm: 20px;
+  --text-headline-sm--line-height: 28px;
+  --text-headline-sm--font-weight: 600;
+  --text-body-lg: 18px;
+  --text-body-lg--line-height: 28px;
+  --text-body-lg--font-weight: 400;
+  --text-body-md: 15px;
+  --text-body-md--line-height: 24px;
+  --text-body-md--font-weight: 400;
+  --text-body-sm: 13px;
+  --text-body-sm--line-height: 20px;
+  --text-body-sm--font-weight: 400;
+  --text-label-lg: 16px;
+  --text-label-lg--line-height: 22px;
+  --text-label-lg--font-weight: 600;
+  --text-label-sm: 12px;
+  --text-label-sm--line-height: 16px;
+  --text-label-sm--font-weight: 500;
+  --text-script-title: 32px;
+  --text-script-title--line-height: 40px;
+  --text-script-title--font-weight: 400;
+  --text-script-title-mobile: 24px;
+  --text-script-title-mobile--line-height: 32px;
+  --text-script-title-mobile--font-weight: 400;
+  --radius-full: 9999px;
+  --animate-surface-enter: surfaceEnter 400ms ease-out;
+}
+*, ::after, ::before, ::backdrop, ::file-selector-button {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0 solid;
+}
+html, :host {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  tab-size: 4;
+  font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji');
+  font-feature-settings: var(--default-font-feature-settings, normal);
+  font-variation-settings: var(--default-font-variation-settings, normal);
+  -webkit-tap-highlight-color: transparent;
+}
+hr {
+  height: 0;
+  color: inherit;
+  border-top-width: 1px;
+}
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+a {
+  color: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+b, strong {
+  font-weight: bolder;
+}
+code, kbd, samp, pre {
+  font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace);
+  font-feature-settings: var(--default-mono-font-feature-settings, normal);
+  font-variation-settings: var(--default-mono-font-variation-settings, normal);
+  font-size: 1em;
+}
+small {
+  font-size: 80%;
+}
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+table {
+  text-indent: 0;
+  border-color: inherit;
+  border-collapse: collapse;
+}
+:-moz-focusring {
+  outline: auto;
+}
+progress {
+  vertical-align: baseline;
+}
+summary {
+  display: list-item;
+}
+ol, ul, menu {
+  list-style: none;
+}
+img, svg, video, canvas, audio, iframe, embed, object {
+  display: block;
+  vertical-align: middle;
+}
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+button, input, select, optgroup, textarea, ::file-selector-button {
+  font: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  border-radius: 0;
+  background-color: transparent;
+  opacity: 1;
+}
+:where(select:is([multiple], [size])) optgroup {
+  font-weight: bolder;
+}
+:where(select:is([multiple], [size])) optgroup option {
+  padding-inline-start: 20px;
+}
+::file-selector-button {
+  margin-inline-end: 4px;
+}
+::placeholder {
+  opacity: 1;
+}
+@supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+  ::placeholder {
+    color: currentcolor;
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, currentcolor 50%, transparent);
+    }
+  }
+}
+textarea {
+  resize: vertical;
+}
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-date-and-time-value {
+  min-height: 1lh;
+  text-align: inherit;
+}
+::-webkit-datetime-edit {
+  display: inline-flex;
+}
+::-webkit-datetime-edit-fields-wrapper {
+  padding: 0;
+}
+::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+  padding-block: 0;
+}
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+button, input:where([type='button'], [type='reset'], [type='submit']), ::file-selector-button {
+  appearance: button;
+}
+::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+  height: auto;
+}
+[hidden]:where(:not([hidden='until-found'])) {
+  display: none !important;
+}
+.pointer-events-none {
+  pointer-events: none;
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+.relative {
+  position: relative;
+}
+.sticky {
+  position: sticky;
+}
+.inset-0 {
+  inset: calc(var(--spacing) * 0);
+}
+.-top-12 {
+  top: calc(var(--spacing) * -12);
+}
+.top-0 {
+  top: calc(var(--spacing) * 0);
+}
+.top-1\/4 {
+  top: calc(1/4 * 100%);
+}
+.top-2\/3 {
+  top: calc(2/3 * 100%);
+}
+.top-3 {
+  top: calc(var(--spacing) * 3);
+}
+.top-4 {
+  top: calc(var(--spacing) * 4);
+}
+.top-5 {
+  top: calc(var(--spacing) * 5);
+}
+.top-6 {
+  top: calc(var(--spacing) * 6);
+}
+.-right-6 {
+  right: calc(var(--spacing) * -6);
+}
+.-right-12 {
+  right: calc(var(--spacing) * -12);
+}
+.-right-48 {
+  right: calc(var(--spacing) * -48);
+}
+.right-0 {
+  right: calc(var(--spacing) * 0);
+}
+.right-1\/3 {
+  right: calc(1/3 * 100%);
+}
+.right-2 {
+  right: calc(var(--spacing) * 2);
+}
+.right-3 {
+  right: calc(var(--spacing) * 3);
+}
+.-bottom-6 {
+  bottom: calc(var(--spacing) * -6);
+}
+.bottom-0 {
+  bottom: calc(var(--spacing) * 0);
+}
+.bottom-1 {
+  bottom: calc(var(--spacing) * 1);
+}
+.bottom-1\/4 {
+  bottom: calc(1/4 * 100%);
+}
+.bottom-4 {
+  bottom: calc(var(--spacing) * 4);
+}
+.-left-48 {
+  left: calc(var(--spacing) * -48);
+}
+.left-0 {
+  left: calc(var(--spacing) * 0);
+}
+.left-1\/2 {
+  left: calc(1/2 * 100%);
+}
+.left-2 {
+  left: calc(var(--spacing) * 2);
+}
+.left-4 {
+  left: calc(var(--spacing) * 4);
+}
+.left-5 {
+  left: calc(var(--spacing) * 5);
+}
+.left-6 {
+  left: calc(var(--spacing) * 6);
+}
+.-z-10 {
+  z-index: calc(10 * -1);
+}
+.z-0 {
+  z-index: 0;
+}
+.z-10 {
+  z-index: 10;
+}
+.z-40 {
+  z-index: 40;
+}
+.z-50 {
+  z-index: 50;
+}
+.mx-auto {
+  margin-inline: auto;
+}
+.my-6 {
+  margin-block: calc(var(--spacing) * 6);
+}
+.mt-0\.5 {
+  margin-top: calc(var(--spacing) * 0.5);
+}
+.mt-1 {
+  margin-top: calc(var(--spacing) * 1);
+}
+.mt-2 {
+  margin-top: calc(var(--spacing) * 2);
+}
+.mt-6 {
+  margin-top: calc(var(--spacing) * 6);
+}
+.mb-1 {
+  margin-bottom: calc(var(--spacing) * 1);
+}
+.mb-2 {
+  margin-bottom: calc(var(--spacing) * 2);
+}
+.mb-3 {
+  margin-bottom: calc(var(--spacing) * 3);
+}
+.mb-4 {
+  margin-bottom: calc(var(--spacing) * 4);
+}
+.mb-6 {
+  margin-bottom: calc(var(--spacing) * 6);
+}
+.mb-8 {
+  margin-bottom: calc(var(--spacing) * 8);
+}
+.mb-10 {
+  margin-bottom: calc(var(--spacing) * 10);
+}
+.mb-12 {
+  margin-bottom: calc(var(--spacing) * 12);
+}
+.mb-16 {
+  margin-bottom: calc(var(--spacing) * 16);
+}
+.block {
+  display: block;
+}
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.hidden {
+  display: none;
+}
+.inline-block {
+  display: inline-block;
+}
+.inline-flex {
+  display: inline-flex;
+}
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+.aspect-video {
+  aspect-ratio: var(--aspect-video);
+}
+.h-8 {
+  height: calc(var(--spacing) * 8);
+}
+.h-9 {
+  height: calc(var(--spacing) * 9);
+}
+.h-10 {
+  height: calc(var(--spacing) * 10);
+}
+.h-12 {
+  height: calc(var(--spacing) * 12);
+}
+.h-16 {
+  height: calc(var(--spacing) * 16);
+}
+.h-20 {
+  height: calc(var(--spacing) * 20);
+}
+.h-24 {
+  height: calc(var(--spacing) * 24);
+}
+.h-28 {
+  height: calc(var(--spacing) * 28);
+}
+.h-40 {
+  height: calc(var(--spacing) * 40);
+}
+.h-44 {
+  height: calc(var(--spacing) * 44);
+}
+.h-80 {
+  height: calc(var(--spacing) * 80);
+}
+.h-96 {
+  height: calc(var(--spacing) * 96);
+}
+.h-full {
+  height: 100%;
+}
+.max-h-\[60vh\] {
+  max-height: 60vh;
+}
+.max-h-\[75vh\] {
+  max-height: 75vh;
+}
+.min-h-60 {
+  min-height: calc(var(--spacing) * 60);
+}
+.min-h-screen {
+  min-height: 100vh;
+}
+.w-0\.5 {
+  width: calc(var(--spacing) * 0.5);
+}
+.w-8 {
+  width: calc(var(--spacing) * 8);
+}
+.w-9 {
+  width: calc(var(--spacing) * 9);
+}
+.w-10 {
+  width: calc(var(--spacing) * 10);
+}
+.w-12 {
+  width: calc(var(--spacing) * 12);
+}
+.w-16 {
+  width: calc(var(--spacing) * 16);
+}
+.w-20 {
+  width: calc(var(--spacing) * 20);
+}
+.w-24 {
+  width: calc(var(--spacing) * 24);
+}
+.w-28 {
+  width: calc(var(--spacing) * 28);
+}
+.w-40 {
+  width: calc(var(--spacing) * 40);
+}
+.w-44 {
+  width: calc(var(--spacing) * 44);
+}
+.w-64 {
+  width: calc(var(--spacing) * 64);
+}
+.w-80 {
+  width: calc(var(--spacing) * 80);
+}
+.w-96 {
+  width: calc(var(--spacing) * 96);
+}
+.w-auto {
+  width: auto;
+}
+.w-full {
+  width: 100%;
+}
+.max-w-2xl {
+  max-width: var(--container-2xl);
+}
+.max-w-3xl {
+  max-width: var(--container-3xl);
+}
+.max-w-6xl {
+  max-width: var(--container-6xl);
+}
+.max-w-md {
+  max-width: var(--container-md);
+}
+.max-w-xl {
+  max-width: var(--container-xl);
+}
+.-translate-x-1\/2 {
+  --tw-translate-x: calc(calc(1/2 * 100%) * -1);
+  translate: var(--tw-translate-x) var(--tw-translate-y);
+}
+.scale-105 {
+  --tw-scale-x: 105%;
+  --tw-scale-y: 105%;
+  --tw-scale-z: 105%;
+  scale: var(--tw-scale-x) var(--tw-scale-y);
+}
+.-rotate-1 {
+  rotate: calc(1deg * -1);
+}
+.rotate-1 {
+  rotate: 1deg;
+}
+.transform {
+  transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+}
+.animate-bounce {
+  animation: var(--animate-bounce);
+}
+.animate-ping {
+  animation: var(--animate-ping);
+}
+.animate-surface-enter {
+  animation: var(--animate-surface-enter);
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.scroll-mt-24 {
+  scroll-margin-top: calc(var(--spacing) * 24);
+}
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.gap-1 {
+  gap: calc(var(--spacing) * 1);
+}
+.gap-2 {
+  gap: calc(var(--spacing) * 2);
+}
+.gap-3 {
+  gap: calc(var(--spacing) * 3);
+}
+.gap-4 {
+  gap: calc(var(--spacing) * 4);
+}
+.gap-6 {
+  gap: calc(var(--spacing) * 6);
+}
+.gap-8 {
+  gap: calc(var(--spacing) * 8);
+}
+.space-y-12 {
+  :where(& > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 12) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 12) * calc(1 - var(--tw-space-y-reverse)));
+  }
+}
+.space-y-24 {
+  :where(& > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 24) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 24) * calc(1 - var(--tw-space-y-reverse)));
+  }
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-y-auto {
+  overflow-y: auto;
+}
+.rounded-2xl {
+  border-radius: var(--radius-2xl);
+}
+.rounded-3xl {
+  border-radius: var(--radius-3xl);
+}
+.rounded-full {
+  border-radius: calc(infinity * 1px);
+}
+.rounded-full {
+  border-radius: var(--radius-full);
+}
+.rounded-xl {
+  border-radius: var(--radius-xl);
+}
+.border {
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+}
+.border-2 {
+  border-style: var(--tw-border-style);
+  border-width: 2px;
+}
+.border-t {
+  border-top-style: var(--tw-border-style);
+  border-top-width: 1px;
+}
+.border-b {
+  border-bottom-style: var(--tw-border-style);
+  border-bottom-width: 1px;
+}
+.border-accent {
+  border-color: var(--color-accent);
+}
+.border-accent\/20 {
+  border-color: color-mix(in srgb, #D4AF37 20%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    border-color: color-mix(in oklab, var(--color-accent) 20%, transparent);
+  }
+}
+.border-accent\/30 {
+  border-color: color-mix(in srgb, #D4AF37 30%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    border-color: color-mix(in oklab, var(--color-accent) 30%, transparent);
+  }
+}
+.border-accent\/40 {
+  border-color: color-mix(in srgb, #D4AF37 40%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    border-color: color-mix(in oklab, var(--color-accent) 40%, transparent);
+  }
+}
+.border-accent\/50 {
+  border-color: color-mix(in srgb, #D4AF37 50%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    border-color: color-mix(in oklab, var(--color-accent) 50%, transparent);
+  }
+}
+.border-accent\/60 {
+  border-color: color-mix(in srgb, #D4AF37 60%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    border-color: color-mix(in oklab, var(--color-accent) 60%, transparent);
+  }
+}
+.border-blush\/10 {
+  border-color: color-mix(in srgb, #F9EAE1 10%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    border-color: color-mix(in oklab, var(--color-blush) 10%, transparent);
+  }
+}
+.border-blush\/20 {
+  border-color: color-mix(in srgb, #F9EAE1 20%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    border-color: color-mix(in oklab, var(--color-blush) 20%, transparent);
+  }
+}
+.border-blush\/30 {
+  border-color: color-mix(in srgb, #F9EAE1 30%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    border-color: color-mix(in oklab, var(--color-blush) 30%, transparent);
+  }
+}
+.border-burgundy\/10 {
+  border-color: color-mix(in srgb, #4A0E17 10%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    border-color: color-mix(in oklab, var(--color-burgundy) 10%, transparent);
+  }
+}
+.border-dusty-rose\/30 {
+  border-color: color-mix(in srgb, #A25768 30%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    border-color: color-mix(in oklab, var(--color-dusty-rose) 30%, transparent);
+  }
+}
+.bg-\[\#FFFDF9\] {
+  background-color: #FFFDF9;
+}
+.bg-accent\/10 {
+  background-color: color-mix(in srgb, #D4AF37 10%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    background-color: color-mix(in oklab, var(--color-accent) 10%, transparent);
+  }
+}
+.bg-accent\/20 {
+  background-color: color-mix(in srgb, #D4AF37 20%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    background-color: color-mix(in oklab, var(--color-accent) 20%, transparent);
+  }
+}
+.bg-blush\/40 {
+  background-color: color-mix(in srgb, #F9EAE1 40%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    background-color: color-mix(in oklab, var(--color-blush) 40%, transparent);
+  }
+}
+.bg-burgundy {
+  background-color: var(--color-burgundy);
+}
+.bg-burgundy-deep {
+  background-color: var(--color-burgundy-deep);
+}
+.bg-burgundy-deep\/70 {
+  background-color: color-mix(in srgb, #1A0609 70%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    background-color: color-mix(in oklab, var(--color-burgundy-deep) 70%, transparent);
+  }
+}
+.bg-burgundy-deep\/80 {
+  background-color: color-mix(in srgb, #1A0609 80%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    background-color: color-mix(in oklab, var(--color-burgundy-deep) 80%, transparent);
+  }
+}
+.bg-burgundy-deep\/90 {
+  background-color: color-mix(in srgb, #1A0609 90%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    background-color: color-mix(in oklab, var(--color-burgundy-deep) 90%, transparent);
+  }
+}
+.bg-burgundy-deep\/95 {
+  background-color: color-mix(in srgb, #1A0609 95%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    background-color: color-mix(in oklab, var(--color-burgundy-deep) 95%, transparent);
+  }
+}
+.bg-burgundy\/10 {
+  background-color: color-mix(in srgb, #4A0E17 10%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    background-color: color-mix(in oklab, var(--color-burgundy) 10%, transparent);
+  }
+}
+.bg-burgundy\/40 {
+  background-color: color-mix(in srgb, #4A0E17 40%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    background-color: color-mix(in oklab, var(--color-burgundy) 40%, transparent);
+  }
+}
+.bg-burgundy\/60 {
+  background-color: color-mix(in srgb, #4A0E17 60%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    background-color: color-mix(in oklab, var(--color-burgundy) 60%, transparent);
+  }
+}
+.bg-burgundy\/80 {
+  background-color: color-mix(in srgb, #4A0E17 80%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    background-color: color-mix(in oklab, var(--color-burgundy) 80%, transparent);
+  }
+}
+.bg-dusty-rose {
+  background-color: var(--color-dusty-rose);
+}
+.bg-dusty-rose\/20 {
+  background-color: color-mix(in srgb, #A25768 20%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    background-color: color-mix(in oklab, var(--color-dusty-rose) 20%, transparent);
+  }
+}
+.bg-dusty-rose\/30 {
+  background-color: color-mix(in srgb, #A25768 30%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    background-color: color-mix(in oklab, var(--color-dusty-rose) 30%, transparent);
+  }
+}
+.bg-parchment {
+  background-color: var(--color-parchment);
+}
+.bg-white\/10 {
+  background-color: color-mix(in srgb, #fff 10%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+  }
+}
+.bg-gradient-to-b {
+  --tw-gradient-position: to bottom in oklab;
+  background-image: linear-gradient(var(--tw-gradient-stops));
+}
+.bg-gradient-to-br {
+  --tw-gradient-position: to bottom right in oklab;
+  background-image: linear-gradient(var(--tw-gradient-stops));
+}
+.bg-gradient-to-r {
+  --tw-gradient-position: to right in oklab;
+  background-image: linear-gradient(var(--tw-gradient-stops));
+}
+.bg-gradient-to-tr {
+  --tw-gradient-position: to top right in oklab;
+  background-image: linear-gradient(var(--tw-gradient-stops));
+}
+.from-\[\#FFF8F0\] {
+  --tw-gradient-from: #FFF8F0;
+  --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+}
+.from-accent {
+  --tw-gradient-from: var(--color-accent);
+  --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+}
+.from-burgundy {
+  --tw-gradient-from: var(--color-burgundy);
+  --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+}
+.from-burgundy-deep {
+  --tw-gradient-from: var(--color-burgundy-deep);
+  --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+}
+.from-burgundy-deep\/90 {
+  --tw-gradient-from: color-mix(in srgb, #1A0609 90%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    --tw-gradient-from: color-mix(in oklab, var(--color-burgundy-deep) 90%, transparent);
+  }
+  --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+}
+.from-dusty-rose {
+  --tw-gradient-from: var(--color-dusty-rose);
+  --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+}
+.via-accent {
+  --tw-gradient-via: var(--color-accent);
+  --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-via-stops);
+}
+.via-burgundy {
+  --tw-gradient-via: var(--color-burgundy);
+  --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-via-stops);
+}
+.via-burgundy-deep {
+  --tw-gradient-via: var(--color-burgundy-deep);
+  --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-via-stops);
+}
+.via-dusty-rose {
+  --tw-gradient-via: var(--color-dusty-rose);
+  --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-via-stops);
+}
+.to-\[\#F7EDE2\] {
+  --tw-gradient-to: #F7EDE2;
+  --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+}
+.to-accent\/20 {
+  --tw-gradient-to: color-mix(in srgb, #D4AF37 20%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    --tw-gradient-to: color-mix(in oklab, var(--color-accent) 20%, transparent);
+  }
+  --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+}
+.to-burgundy {
+  --tw-gradient-to: var(--color-burgundy);
+  --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+}
+.to-burgundy-deep {
+  --tw-gradient-to: var(--color-burgundy-deep);
+  --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+}
+.to-burgundy\/80 {
+  --tw-gradient-to: color-mix(in srgb, #4A0E17 80%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    --tw-gradient-to: color-mix(in oklab, var(--color-burgundy) 80%, transparent);
+  }
+  --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+}
+.object-contain {
+  object-fit: contain;
+}
+.object-cover {
+  object-fit: cover;
+}
+.p-1 {
+  padding: calc(var(--spacing) * 1);
+}
+.p-1\.5 {
+  padding: calc(var(--spacing) * 1.5);
+}
+.p-2 {
+  padding: calc(var(--spacing) * 2);
+}
+.p-3 {
+  padding: calc(var(--spacing) * 3);
+}
+.p-4 {
+  padding: calc(var(--spacing) * 4);
+}
+.p-6 {
+  padding: calc(var(--spacing) * 6);
+}
+.p-8 {
+  padding: calc(var(--spacing) * 8);
+}
+.p-10 {
+  padding: calc(var(--spacing) * 10);
+}
+.px-3 {
+  padding-inline: calc(var(--spacing) * 3);
+}
+.px-4 {
+  padding-inline: calc(var(--spacing) * 4);
+}
+.px-5 {
+  padding-inline: calc(var(--spacing) * 5);
+}
+.px-6 {
+  padding-inline: calc(var(--spacing) * 6);
+}
+.px-8 {
+  padding-inline: calc(var(--spacing) * 8);
+}
+.px-10 {
+  padding-inline: calc(var(--spacing) * 10);
+}
+.py-1 {
+  padding-block: calc(var(--spacing) * 1);
+}
+.py-2 {
+  padding-block: calc(var(--spacing) * 2);
+}
+.py-2\.5 {
+  padding-block: calc(var(--spacing) * 2.5);
+}
+.py-3 {
+  padding-block: calc(var(--spacing) * 3);
+}
+.py-3\.5 {
+  padding-block: calc(var(--spacing) * 3.5);
+}
+.py-4 {
+  padding-block: calc(var(--spacing) * 4);
+}
+.py-20 {
+  padding-block: calc(var(--spacing) * 20);
+}
+.pt-3 {
+  padding-top: calc(var(--spacing) * 3);
+}
+.pt-6 {
+  padding-top: calc(var(--spacing) * 6);
+}
+.pt-8 {
+  padding-top: calc(var(--spacing) * 8);
+}
+.pb-3 {
+  padding-bottom: calc(var(--spacing) * 3);
+}
+.pb-8 {
+  padding-bottom: calc(var(--spacing) * 8);
+}
+.pb-24 {
+  padding-bottom: calc(var(--spacing) * 24);
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.font-body {
+  font-family: var(--font-body);
+}
+.font-headline {
+  font-family: var(--font-headline);
+}
+.font-script {
+  font-family: var(--font-script);
+}
+.text-display-lg-mobile {
+  font-size: var(--text-display-lg-mobile);
+  line-height: var(--tw-leading, var(--text-display-lg-mobile--line-height));
+  letter-spacing: var(--tw-tracking, var(--text-display-lg-mobile--letter-spacing));
+  font-weight: var(--tw-font-weight, var(--text-display-lg-mobile--font-weight));
+}
+.text-headline-lg {
+  font-size: var(--text-headline-lg);
+  line-height: var(--tw-leading, var(--text-headline-lg--line-height));
+  letter-spacing: var(--tw-tracking, var(--text-headline-lg--letter-spacing));
+  font-weight: var(--tw-font-weight, var(--text-headline-lg--font-weight));
+}
+.text-headline-lg-mobile {
+  font-size: var(--text-headline-lg-mobile);
+  line-height: var(--tw-leading, var(--text-headline-lg-mobile--line-height));
+  letter-spacing: var(--tw-tracking, var(--text-headline-lg-mobile--letter-spacing));
+  font-weight: var(--tw-font-weight, var(--text-headline-lg-mobile--font-weight));
+}
+.text-body-lg {
+  font-size: var(--text-body-lg);
+  line-height: var(--tw-leading, var(--text-body-lg--line-height));
+  font-weight: var(--tw-font-weight, var(--text-body-lg--font-weight));
+}
+.text-body-md {
+  font-size: var(--text-body-md);
+  line-height: var(--tw-leading, var(--text-body-md--line-height));
+  font-weight: var(--tw-font-weight, var(--text-body-md--font-weight));
+}
+.text-body-sm {
+  font-size: var(--text-body-sm);
+  line-height: var(--tw-leading, var(--text-body-sm--line-height));
+  font-weight: var(--tw-font-weight, var(--text-body-sm--font-weight));
+}
+.text-headline-md {
+  font-size: var(--text-headline-md);
+  line-height: var(--tw-leading, var(--text-headline-md--line-height));
+  font-weight: var(--tw-font-weight, var(--text-headline-md--font-weight));
+}
+.text-headline-sm {
+  font-size: var(--text-headline-sm);
+  line-height: var(--tw-leading, var(--text-headline-sm--line-height));
+  font-weight: var(--tw-font-weight, var(--text-headline-sm--font-weight));
+}
+.text-label-lg {
+  font-size: var(--text-label-lg);
+  line-height: var(--tw-leading, var(--text-label-lg--line-height));
+  font-weight: var(--tw-font-weight, var(--text-label-lg--font-weight));
+}
+.text-label-sm {
+  font-size: var(--text-label-sm);
+  line-height: var(--tw-leading, var(--text-label-sm--line-height));
+  font-weight: var(--tw-font-weight, var(--text-label-sm--font-weight));
+}
+.text-script-title-mobile {
+  font-size: var(--text-script-title-mobile);
+  line-height: var(--tw-leading, var(--text-script-title-mobile--line-height));
+  font-weight: var(--tw-font-weight, var(--text-script-title-mobile--font-weight));
+}
+.text-2xl {
+  font-size: var(--text-2xl);
+  line-height: var(--tw-leading, var(--text-2xl--line-height));
+}
+.text-8xl {
+  font-size: var(--text-8xl);
+  line-height: var(--tw-leading, var(--text-8xl--line-height));
+}
+.text-base {
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+}
+.text-lg {
+  font-size: var(--text-lg);
+  line-height: var(--tw-leading, var(--text-lg--line-height));
+}
+.text-sm {
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+}
+.text-xl {
+  font-size: var(--text-xl);
+  line-height: var(--tw-leading, var(--text-xl--line-height));
+}
+.text-xs {
+  font-size: var(--text-xs);
+  line-height: var(--tw-leading, var(--text-xs--line-height));
+}
+.text-\[11px\] {
+  font-size: 11px;
+}
+.leading-relaxed {
+  --tw-leading: var(--leading-relaxed);
+  line-height: var(--leading-relaxed);
+}
+.leading-tight {
+  --tw-leading: var(--leading-tight);
+  line-height: var(--leading-tight);
+}
+.font-bold {
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
+}
+.font-extrabold {
+  --tw-font-weight: var(--font-weight-extrabold);
+  font-weight: var(--font-weight-extrabold);
+}
+.font-medium {
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+}
+.font-semibold {
+  --tw-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
+}
+.tracking-wide {
+  --tw-tracking: var(--tracking-wide);
+  letter-spacing: var(--tracking-wide);
+}
+.tracking-wider {
+  --tw-tracking: var(--tracking-wider);
+  letter-spacing: var(--tracking-wider);
+}
+.text-balance {
+  text-wrap: balance;
+}
+.text-pretty {
+  text-wrap: pretty;
+}
+.whitespace-pre-line {
+  white-space: pre-line;
+}
+.text-accent {
+  color: var(--color-accent);
+}
+.text-blush {
+  color: var(--color-blush);
+}
+.text-blush\/50 {
+  color: color-mix(in srgb, #F9EAE1 50%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    color: color-mix(in oklab, var(--color-blush) 50%, transparent);
+  }
+}
+.text-blush\/60 {
+  color: color-mix(in srgb, #F9EAE1 60%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    color: color-mix(in oklab, var(--color-blush) 60%, transparent);
+  }
+}
+.text-blush\/70 {
+  color: color-mix(in srgb, #F9EAE1 70%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    color: color-mix(in oklab, var(--color-blush) 70%, transparent);
+  }
+}
+.text-blush\/75 {
+  color: color-mix(in srgb, #F9EAE1 75%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    color: color-mix(in oklab, var(--color-blush) 75%, transparent);
+  }
+}
+.text-blush\/80 {
+  color: color-mix(in srgb, #F9EAE1 80%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    color: color-mix(in oklab, var(--color-blush) 80%, transparent);
+  }
+}
+.text-blush\/90 {
+  color: color-mix(in srgb, #F9EAE1 90%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    color: color-mix(in oklab, var(--color-blush) 90%, transparent);
+  }
+}
+.text-burgundy {
+  color: var(--color-burgundy);
+}
+.text-burgundy-deep {
+  color: var(--color-burgundy-deep);
+}
+.text-burgundy\/60 {
+  color: color-mix(in srgb, #4A0E17 60%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    color: color-mix(in oklab, var(--color-burgundy) 60%, transparent);
+  }
+}
+.text-dusty-rose {
+  color: var(--color-dusty-rose);
+}
+.text-gold-light {
+  color: var(--color-gold-light);
+}
+.tabular-nums {
+  --tw-numeric-spacing: tabular-nums;
+  font-variant-numeric: var(--tw-ordinal,) var(--tw-slashed-zero,) var(--tw-numeric-figure,) var(--tw-numeric-spacing,) var(--tw-numeric-fraction,);
+}
+.opacity-0 {
+  opacity: 0%;
+}
+.opacity-40 {
+  opacity: 40%;
+}
+.opacity-75 {
+  opacity: 75%;
+}
+.opacity-100 {
+  opacity: 100%;
+}
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.shadow-accent\/20 {
+  --tw-shadow-color: color-mix(in srgb, #D4AF37 20%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-accent) 20%, transparent) var(--tw-shadow-alpha), transparent);
+  }
+}
+.shadow-accent\/40 {
+  --tw-shadow-color: color-mix(in srgb, #D4AF37 40%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-accent) 40%, transparent) var(--tw-shadow-alpha), transparent);
+  }
+}
+.shadow-burgundy-deep\/80 {
+  --tw-shadow-color: color-mix(in srgb, #1A0609 80%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-burgundy-deep) 80%, transparent) var(--tw-shadow-alpha), transparent);
+  }
+}
+.blur-2xl {
+  --tw-blur: blur(var(--blur-2xl));
+  filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+}
+.blur-3xl {
+  --tw-blur: blur(var(--blur-3xl));
+  filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+}
+.blur-xl {
+  --tw-blur: blur(var(--blur-xl));
+  filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+}
+.backdrop-blur-lg {
+  --tw-backdrop-blur: blur(var(--blur-lg));
+  -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+}
+.backdrop-blur-md {
+  --tw-backdrop-blur: blur(var(--blur-md));
+  -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+}
+.backdrop-blur-sm {
+  --tw-backdrop-blur: blur(var(--blur-sm));
+  -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+}
+.transition-all {
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+}
+.transition-colors {
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+}
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+}
+.transition-transform {
+  transition-property: transform, translate, scale, rotate;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+}
+.duration-300 {
+  --tw-duration: 300ms;
+  transition-duration: 300ms;
+}
+.duration-500 {
+  --tw-duration: 500ms;
+  transition-duration: 500ms;
+}
+.duration-700 {
+  --tw-duration: 700ms;
+  transition-duration: 700ms;
+}
+.ease-out {
+  --tw-ease: var(--ease-out);
+  transition-timing-function: var(--ease-out);
+}
+.group-hover\:translate-x-\[-4px\] {
+  &:is(:where(.group):hover *) {
+    @media (hover: hover) {
+      --tw-translate-x: -4px;
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+}
+.group-hover\:-translate-y-2 {
+  &:is(:where(.group):hover *) {
+    @media (hover: hover) {
+      --tw-translate-y: calc(var(--spacing) * -2);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+}
+.group-hover\:scale-105 {
+  &:is(:where(.group):hover *) {
+    @media (hover: hover) {
+      --tw-scale-x: 105%;
+      --tw-scale-y: 105%;
+      --tw-scale-z: 105%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+}
+.group-hover\:scale-110 {
+  &:is(:where(.group):hover *) {
+    @media (hover: hover) {
+      --tw-scale-x: 110%;
+      --tw-scale-y: 110%;
+      --tw-scale-z: 110%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+}
+.group-hover\:scale-125 {
+  &:is(:where(.group):hover *) {
+    @media (hover: hover) {
+      --tw-scale-x: 125%;
+      --tw-scale-y: 125%;
+      --tw-scale-z: 125%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+}
+.group-hover\:rotate-12 {
+  &:is(:where(.group):hover *) {
+    @media (hover: hover) {
+      rotate: 12deg;
+    }
+  }
+}
+.group-hover\:border-accent {
+  &:is(:where(.group):hover *) {
+    @media (hover: hover) {
+      border-color: var(--color-accent);
+    }
+  }
+}
+.group-hover\:text-dusty-rose {
+  &:is(:where(.group):hover *) {
+    @media (hover: hover) {
+      color: var(--color-dusty-rose);
+    }
+  }
+}
+.group-hover\:shadow-lg {
+  &:is(:where(.group):hover *) {
+    @media (hover: hover) {
+      --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+}
+.selection\:bg-dusty-rose {
+  & *::selection {
+    background-color: var(--color-dusty-rose);
+  }
+  &::selection {
+    background-color: var(--color-dusty-rose);
+  }
+}
+.selection\:text-blush {
+  & *::selection {
+    color: var(--color-blush);
+  }
+  &::selection {
+    color: var(--color-blush);
+  }
+}
+.hover\:-translate-y-1 {
+  &:hover {
+    @media (hover: hover) {
+      --tw-translate-y: calc(var(--spacing) * -1);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+}
+.hover\:scale-105 {
+  &:hover {
+    @media (hover: hover) {
+      --tw-scale-x: 105%;
+      --tw-scale-y: 105%;
+      --tw-scale-z: 105%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+}
+.hover\:border-accent {
+  &:hover {
+    @media (hover: hover) {
+      border-color: var(--color-accent);
+    }
+  }
+}
+.hover\:border-accent\/50 {
+  &:hover {
+    @media (hover: hover) {
+      border-color: color-mix(in srgb, #D4AF37 50%, transparent);
+      @supports (color: color-mix(in lab, red, red)) {
+        border-color: color-mix(in oklab, var(--color-accent) 50%, transparent);
+      }
+    }
+  }
+}
+.hover\:border-accent\/60 {
+  &:hover {
+    @media (hover: hover) {
+      border-color: color-mix(in srgb, #D4AF37 60%, transparent);
+      @supports (color: color-mix(in lab, red, red)) {
+        border-color: color-mix(in oklab, var(--color-accent) 60%, transparent);
+      }
+    }
+  }
+}
+.hover\:bg-burgundy {
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--color-burgundy);
+    }
+  }
+}
+.hover\:bg-burgundy-deep {
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--color-burgundy-deep);
+    }
+  }
+}
+.hover\:bg-white\/20 {
+  &:hover {
+    @media (hover: hover) {
+      background-color: color-mix(in srgb, #fff 20%, transparent);
+      @supports (color: color-mix(in lab, red, red)) {
+        background-color: color-mix(in oklab, var(--color-white) 20%, transparent);
+      }
+    }
+  }
+}
+.hover\:text-accent {
+  &:hover {
+    @media (hover: hover) {
+      color: var(--color-accent);
+    }
+  }
+}
+.hover\:text-blush {
+  &:hover {
+    @media (hover: hover) {
+      color: var(--color-blush);
+    }
+  }
+}
+.hover\:shadow-lg {
+  &:hover {
+    @media (hover: hover) {
+      --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+}
+.hover\:shadow-accent\/20 {
+  &:hover {
+    @media (hover: hover) {
+      --tw-shadow-color: color-mix(in srgb, #D4AF37 20%, transparent);
+      @supports (color: color-mix(in lab, red, red)) {
+        --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-accent) 20%, transparent) var(--tw-shadow-alpha), transparent);
+      }
+    }
+  }
+}
+.hover\:shadow-accent\/25 {
+  &:hover {
+    @media (hover: hover) {
+      --tw-shadow-color: color-mix(in srgb, #D4AF37 25%, transparent);
+      @supports (color: color-mix(in lab, red, red)) {
+        --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-accent) 25%, transparent) var(--tw-shadow-alpha), transparent);
+      }
+    }
+  }
+}
+.hover\:shadow-accent\/40 {
+  &:hover {
+    @media (hover: hover) {
+      --tw-shadow-color: color-mix(in srgb, #D4AF37 40%, transparent);
+      @supports (color: color-mix(in lab, red, red)) {
+        --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-accent) 40%, transparent) var(--tw-shadow-alpha), transparent);
+      }
+    }
+  }
+}
+.active\:scale-95 {
+  &:active {
+    --tw-scale-x: 95%;
+    --tw-scale-y: 95%;
+    --tw-scale-z: 95%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+}
+.sm\:grid-cols-2 {
+  @media (width >= 40rem) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.sm\:grid-cols-4 {
+  @media (width >= 40rem) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+.sm\:px-6 {
+  @media (width >= 40rem) {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+}
+.md\:block {
+  @media (width >= 48rem) {
+    display: block;
+  }
+}
+.md\:flex {
+  @media (width >= 48rem) {
+    display: flex;
+  }
+}
+.md\:hidden {
+  @media (width >= 48rem) {
+    display: none;
+  }
+}
+.md\:w-\[calc\(50\%-2rem\)\] {
+  @media (width >= 48rem) {
+    width: calc(50% - 2rem);
+  }
+}
+.md\:flex-row {
+  @media (width >= 48rem) {
+    flex-direction: row;
+  }
+}
+.md\:flex-row-reverse {
+  @media (width >= 48rem) {
+    flex-direction: row-reverse;
+  }
+}
+.md\:pb-12 {
+  @media (width >= 48rem) {
+    padding-bottom: calc(var(--spacing) * 12);
+  }
+}
+.md\:text-display-lg {
+  @media (width >= 48rem) {
+    font-size: var(--text-display-lg);
+    line-height: var(--tw-leading, var(--text-display-lg--line-height));
+    letter-spacing: var(--tw-tracking, var(--text-display-lg--letter-spacing));
+    font-weight: var(--tw-font-weight, var(--text-display-lg--font-weight));
+  }
+}
+.md\:text-headline-lg {
+  @media (width >= 48rem) {
+    font-size: var(--text-headline-lg);
+    line-height: var(--tw-leading, var(--text-headline-lg--line-height));
+    letter-spacing: var(--tw-tracking, var(--text-headline-lg--letter-spacing));
+    font-weight: var(--tw-font-weight, var(--text-headline-lg--font-weight));
+  }
+}
+.md\:text-script-title {
+  @media (width >= 48rem) {
+    font-size: var(--text-script-title);
+    line-height: var(--tw-leading, var(--text-script-title--line-height));
+    font-weight: var(--tw-font-weight, var(--text-script-title--font-weight));
+  }
+}
+.lg\:grid-cols-3 {
+  @media (width >= 64rem) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.lg\:px-8 {
+  @media (width >= 64rem) {
+    padding-inline: calc(var(--spacing) * 8);
+  }
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-gradient-position {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-via {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-to {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-via-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --tw-gradient-via-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@property --tw-gradient-to-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ordinal {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-slashed-zero {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-numeric-figure {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-numeric-spacing {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-numeric-fraction {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-inset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-ring-inset {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-offset-width {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --tw-ring-offset-color {
+  syntax: "*";
+  inherits: false;
+  initial-value: #fff;
+}
+@property --tw-ring-offset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-drop-shadow-size {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ease {
+  syntax: "*";
+  inherits: false;
+}
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+@keyframes surfaceEnter {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scale-z: 1;
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
+      --tw-space-y-reverse: 0;
+      --tw-border-style: solid;
+      --tw-gradient-position: initial;
+      --tw-gradient-from: #0000;
+      --tw-gradient-via: #0000;
+      --tw-gradient-to: #0000;
+      --tw-gradient-stops: initial;
+      --tw-gradient-via-stops: initial;
+      --tw-gradient-from-position: 0%;
+      --tw-gradient-via-position: 50%;
+      --tw-gradient-to-position: 100%;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-tracking: initial;
+      --tw-ordinal: initial;
+      --tw-slashed-zero: initial;
+      --tw-numeric-figure: initial;
+      --tw-numeric-spacing: initial;
+      --tw-numeric-fraction: initial;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-color: initial;
+      --tw-shadow-alpha: 100%;
+      --tw-inset-shadow: 0 0 #0000;
+      --tw-inset-shadow-color: initial;
+      --tw-inset-shadow-alpha: 100%;
+      --tw-ring-color: initial;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-inset-ring-color: initial;
+      --tw-inset-ring-shadow: 0 0 #0000;
+      --tw-ring-inset: initial;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-blur: initial;
+      --tw-brightness: initial;
+      --tw-contrast: initial;
+      --tw-grayscale: initial;
+      --tw-hue-rotate: initial;
+      --tw-invert: initial;
+      --tw-opacity: initial;
+      --tw-saturate: initial;
+      --tw-sepia: initial;
+      --tw-drop-shadow: initial;
+      --tw-drop-shadow-color: initial;
+      --tw-drop-shadow-alpha: 100%;
+      --tw-drop-shadow-size: initial;
+      --tw-backdrop-blur: initial;
+      --tw-backdrop-brightness: initial;
+      --tw-backdrop-contrast: initial;
+      --tw-backdrop-grayscale: initial;
+      --tw-backdrop-hue-rotate: initial;
+      --tw-backdrop-invert: initial;
+      --tw-backdrop-opacity: initial;
+      --tw-backdrop-saturate: initial;
+      --tw-backdrop-sepia: initial;
+      --tw-duration: initial;
+      --tw-ease: initial;
+    }
+  }
+}
+
+/* ==========================================================
+   Our Love Story — Style Enhancements & Romantic Lighting
+   ========================================================== */
+
+400;600;700;800&family=Great+Vibes&display=swap');
+
+:root {
+  --color-burgundy: #4A0E17;
+  --color-burgundy-deep: #1A0609;
+  --color-dusty-rose: #A25768;
+  --color-blush: #F9EAE1;
+  --color-gold: #D4AF37;
+  --color-gold-light: #F3E5AB;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: var(--color-burgundy-deep);
+  color: var(--color-blush);
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-burgundy-deep);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-dusty-rose);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold);
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(43, 6, 12, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.glass-header {
+  background: rgba(26, 6, 9, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+/* Romantic Animations */
+@keyframes heartPulse {
+  0% { transform: scale(1); filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.4)); }
+  50% { transform: scale(1.15); filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.8)); }
+  100% { transform: scale(1); filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.4)); }
+}
+
+.animate-heart-pulse {
+  animation: heartPulse 2.5s infinite ease-in-out;
+}
+
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float-gentle {
+  animation: floatGentle 4s infinite ease-in-out;
+}
+
+@keyframes softGlow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+.animate-glow-pulse {
+  animation: softGlow 3s infinite ease-in-out;
+}
+
+/* Polaroid Photo Styling */
+.polaroid-frame {
+  background: #FFFDF9;
+  box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.6), 0 0 1px 1px rgba(255, 255, 255, 0.2);
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+}
+
+.polaroid-frame:hover {
+  transform: translateY(-8px) scale(1.02) rotate(0deg) !important;
+  box-shadow: 0 25px 45px -5px rgba(212, 175, 55, 0.25), 0 0 1px 1px rgba(212, 175, 55, 0.4);
+}
+
+/* Music Equalizer Bars */
+.equalizer-bar {
+  width: 3px;
+  background-color: var(--color-gold);
+  border-radius: 2px;
+  animation: equalize 1s infinite alternate ease-in-out;
+}
+.equalizer-bar:nth-child(1) { height: 10px; animation-delay: 0.1s; }
+.equalizer-bar:nth-child(2) { height: 16px; animation-delay: 0.3s; }
+.equalizer-bar:nth-child(3) { height: 8px; animation-delay: 0.2s; }
+.equalizer-bar:nth-child(4) { height: 14px; animation-delay: 0.4s; }
+
+@keyframes equalize {
+  0% { transform: scaleY(0.3); }
+  100% { transform: scaleY(1); }
+}
+
+
+    .material-symbols-outlined {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      line-height: 1 !important;
+      box-sizing: content-box;
+      overflow: hidden;
+      white-space: nowrap;
+      direction: ltr;
+      vertical-align: middle;
+    }
+  
+[hidden] {display:none!important} .material-symbols-outlined svg {display:block;width:1em;height:1em} .material-symbols-outlined {font-family:inherit!important; flex-shrink:0} .reason-card {text-align:start;width:100%;} .reason-card[aria-expanded=true] > div {border-color:#D4AF37} .reason-description {margin-top:.6rem} button:focus-visible,a:focus-visible,[role=button]:focus-visible {outline:2px solid #F3E5AB;outline-offset:4px} .demo-note {font-size:12px;color:#f3e5ab;opacity:.82;margin-top:1.25rem} .modal-open {overflow:hidden} [role=dialog] {overflow:auto;overscroll-behavior:contain} .music-panel {position:fixed;z-index:45;top:78px;inset-inline-end:12px;width:min(340px,calc(100vw - 24px));padding:14px;border-radius:20px} .music-panel-head {display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;color:#F3E5AB} .music-panel-head button {font-size:26px;line-height:1} .music-panel audio {width:100%;height:44px} .music-volume {display:flex;align-items:center;gap:10px;font-size:12px;margin-top:10px} .music-volume input {flex:1;accent-color:#D4AF37} #music-error {font-size:12px} .gallery-controls {position:absolute;bottom:max(12px,env(safe-area-inset-bottom));display:flex;align-items:center;gap:20px;color:#F3E5AB} .gallery-controls button {width:44px;height:44px;background:#4A0E17;border:1px solid #D4AF37;border-radius:50%;font-size:30px;line-height:1} #photo-lightbox img {max-height:65dvh;max-width:100%} .mobile-nav {padding-bottom:max(10px,env(safe-area-inset-bottom));overflow-x:auto;justify-content:space-between;gap:12px} .mobile-nav a {flex:0 0 auto;min-width:39px;white-space:nowrap} #welcome-screen {min-height:100dvh;overflow:auto} #story {scroll-margin-top:95px} #main-experience {padding-bottom:calc(6rem + env(safe-area-inset-bottom))} #letter-modal>div {max-height:90dvh;display:flex;flex-direction:column} #letter-modal-body {overflow-wrap:anywhere} @media(max-width:767px){#story>div:nth-child(2) {gap:1rem} #story>div:nth-child(2)>div.w-64 {width:auto} #story .w-44 {width:8rem;height:8rem} #welcome-screen h1 {font-size:clamp(25px,7vw,32px)} #welcome-screen {padding:16px} #welcome-screen p {margin-bottom:20px} #welcome-screen .demo-note {margin-bottom:0} .mobile-nav {padding-inline:10px} #letter-modal>div>div {padding:16px} header {padding-inline:12px!important} } @media(prefers-reduced-motion:reduce){*,*::before,*::after {animation-duration:0.01ms!important;transition-duration:0.01ms!important;scroll-behavior:auto!important}}
+
+/* Keep every mobile tab visible, including 320px screens. */
+.mobile-nav {gap:0;padding-inline:4px;overflow-x:visible;justify-content:space-evenly} .mobile-nav a {flex:1 1 0;min-width:0} .mobile-nav a span:last-child {font-size:10px} .mobile-nav a .material-symbols-outlined {font-size:19px} @media (min-width:768px) and (max-width:1023px){header nav{display:none!important}.mobile-nav{display:flex!important}} @media(min-width:1024px){header nav{display:flex!important}.mobile-nav{display:none!important}}
+</style><meta content="noindex, nofollow" name="robots"/><meta content="#1A0609" name="theme-color"/><link href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTYwIj48ZGVmcz48cmFkaWFsR3JhZGllbnQgaWQ9ImciPjxzdG9wIHN0b3AtY29sb3I9IiM3NDMyNDQiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxQTA2MDkiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0idXJsKCNnKSIvPjxyZWN0IHg9IjI0IiB5PSIyNCIgd2lkdGg9Ijc1MiIgaGVpZ2h0PSI1MTIiIHJ4PSIyNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRDRBRjM3IiBzdHJva2Utb3BhY2l0eT0iLjQ1Ii8+PGcgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRDRBRjM3IiBzdHJva2Utd2lkdGg9IjQiIG9wYWNpdHk9Ii43Ij48Y2lyY2xlIGN4PSI0MDAiIGN5PSIyNTAiIHI9IjEwNCIvPjxjaXJjbGUgY3g9IjQwMCIgY3k9IjI1MCIgcj0iMTIwIiBvcGFjaXR5PSIuMzUiLz48cGF0aCBkPSJNNDAwIDMxMCAzNDAgMjUyQzI4MSAxOTIgMzU5IDE0NSA0MDAgMjA0QzQ0MSAxNDUgNTE5IDE5MiA0NjAgMjUyWiIgZmlsbD0iI0Q0QUYzNyIgZmlsbC1vcGFjaXR5PSIuMjMiLz48L2c+PHRleHQgeD0iNDAwIiB5PSI0MzQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLHNlcmlmIiBmb250LXNpemU9IjMwIiBmaWxsPSIjRjNFNUFCIiBsZXR0ZXItc3BhY2luZz0iNCI+T1VSIExPVkUgU1RPUlk8L3RleHQ+PHRleHQgeD0iNDAwIiB5PSI0NzAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE1IiBmaWxsPSIjRjlFQUUxIj5QSE9UTyBQTEFDRUhPTERFUjwvdGV4dD48L3N2Zz4=" rel="icon" type="image/svg+xml"/><style>
+#setup-page{position:relative;z-index:60;max-width:900px;margin:auto;padding:24px 16px 70px;min-height:100dvh}
+#setup-page h1{font-size:clamp(27px,5vw,40px);font-weight:800;color:#F3E5AB;margin:8px 0}
+#setup-page h2{font-size:20px;font-weight:700;color:#F3E5AB;margin:0 0 12px}
+#setup-page p{line-height:1.9}
+.setup-panel{background:rgba(74,14,23,.45);border:1px solid #a2576870;border-radius:24px;padding:22px;margin:18px 0}
+.setup-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:14px}
+.setup-field{display:grid;gap:6px;font-size:14px;color:#F9EAE1;min-width:0}
+.setup-field input,.setup-field textarea,.share-output{width:100%;min-width:0;background:#1A0609;color:#F9EAE1;border:1px solid #a25768;border-radius:12px;padding:11px;outline-offset:3px;box-sizing:border-box}
+.setup-field textarea{min-height:86px;resize:vertical}
+.setup-field input[type=file]{font-size:12px}.setup-field small{color:#F3E5AB}
+.setup-action,.story-edit{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:10px 18px;border-radius:999px;border:1px solid #D4AF37;color:#F3E5AB;background:#4A0E17;font-weight:700;cursor:pointer}
+.setup-primary{background:#D4AF37;color:#1A0609}
+.setup-row{border-top:1px solid #a2576855;margin:12px 0;padding:12px 0}
+.setup-row .remove-row{font-size:13px;color:#F9EAE1;text-decoration:underline;margin:8px 0}
+.setup-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.setup-status{color:#F3E5AB;white-space:pre-wrap;overflow-wrap:anywhere;margin-top:12px}
+#setup-page input:focus,#setup-page textarea:focus{outline:2px solid #F3E5AB}
+#setup-page .hero-copy{text-align:center;margin:18px auto 28px;max-width:660px}
+#setup-page [hidden],#welcome-screen[hidden],#main-experience[hidden]{display:none!important}
+.story-edit{font-size:13px;margin:8px}.photo-state{font-size:12px;color:#F3E5AB}
+@media(max-width:500px){.setup-panel{padding:15px}.setup-actions>*{flex:1 1 140px}}
+</style></head>
+<body class="bg-burgundy-deep text-blush min-h-screen relative selection:bg-dusty-rose selection:text-blush font-body">
+<section id="setup-page" aria-label="إعداد حكايتنا">
+<div class="hero-copy"><div class="font-script text-gold-light" style="font-size:30px">Our Love Story</div><div style="font-size:44px;color:#D4AF37">♡</div><h1>ابدأ حكايتكم</h1><p>اكتب بياناتكم الحقيقية بنفسك. كل الذكريات والرسائل والصور اختيارية، ولن تظهر أي بيانات لم تضفها.</p></div>
+<form id="story-form">
+<div class="setup-panel"><h2>١. البيانات الأساسية</h2><div id="couple-fields" class="setup-grid"></div></div>
+<div class="setup-panel"><h2>٢. الذكريات والصور</h2><div id="memories-fields"></div><button class="setup-action" type="button" data-add="memories">+ إضافة ذكرى</button><div id="photos-fields"></div><button class="setup-action" type="button" data-add="photos">+ إضافة صورة للألبوم</button></div>
+<div class="setup-panel"><h2>٣. أسباب الحب والرسائل</h2><div id="reasons-fields"></div><button class="setup-action" type="button" data-add="reasons">+ إضافة سبب</button><div id="letters-fields"></div><button class="setup-action" type="button" data-add="letters">+ إضافة رسالة</button></div>
+<div class="setup-panel"><h2>٤. أحلامنا والمفاجأة</h2><div id="dreams-fields"></div><button class="setup-action" type="button" data-add="dreams">+ إضافة حلم</button><div id="extra-fields" class="setup-grid" style="margin-top:18px"></div></div>
+<div class="setup-panel"><h2>٥. حفظ ومشاركة</h2><p style="font-size:13px">المسودة تُحفظ في متصفحك فقط. رابط المشاركة يحمل البيانات التي تدخلها، ولا يحتاج قاعدة بيانات. الأشخاص الذين يحصلون على الرابط يستطيعون قراءة محتواه. للصور المرفوعة من جهازك، استخدم الملف الشخصي القابل للمشاركة، أو أدخل روابط HTTPS للصور لإنشاء رابط قصير نسبيًا.</p><div class="setup-actions"><button class="setup-action setup-primary" type="submit">حفظ ومعاينة الحكاية</button><button class="setup-action" id="share-story" type="button">إنشاء رابط مشاركة</button><button class="setup-action" id="export-story" type="button">تنزيل نسخة شخصية HTML</button><button class="setup-action" id="reset-story" type="button">مسح المسودة</button></div><p class="setup-status" id="setup-status" role="status"></p><div id="share-result" hidden><label class="setup-field">رابط المشاركة<input id="share-url" class="share-output" readonly dir="ltr"></label><button type="button" class="setup-action" id="copy-share">نسخ الرابط</button></div></div>
+</form></section>
+<script type="application/json" id="embedded-story">null</script>
+<!-- Subtle Ambient Particles Container -->
+<div class="fixed inset-0 pointer-events-none z-0 overflow-hidden" id="particles-canvas-container"></div>
+<!-- Ambient Golden & Rose Glows -->
+<div class="fixed top-1/4 -right-48 w-96 h-96 bg-burgundy/40 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="fixed bottom-1/4 -left-48 w-96 h-96 bg-dusty-rose/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="fixed top-2/3 right-1/3 w-80 h-80 bg-accent/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<!-- ============================================================== -->
+<!-- 2. WELCOME SCREEN (Cinematic Fullscreen Hero)                     -->
+<!-- ============================================================== -->
+<section class="fixed inset-0 z-50 flex flex-col items-center justify-center p-6 bg-gradient-to-b from-burgundy-deep via-burgundy to-burgundy-deep transition-all duration-700 ease-out text-center" id="welcome-screen" hidden>
+<!-- Floating English Calligraphy Header -->
+<div class="font-script text-script-title-mobile md:text-script-title text-gold-light mb-2 animate-float-gentle">
+      Our Eternal Love Story
+    </div>
+<!-- Glowing Animated Heart -->
+<div class="relative my-6 flex items-center justify-center">
+<div class="absolute w-28 h-28 rounded-full bg-accent/20 blur-xl animate-glow-pulse"></div>
+<div class="w-20 h-20 rounded-full bg-gradient-to-tr from-dusty-rose to-burgundy border-2 border-accent/60 flex items-center justify-center shadow-2xl shadow-accent/40 animate-heart-pulse">
+<span class="material-symbols-outlined text-display-lg-mobile text-accent" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+</div>
+<!-- Names Tagline -->
+<div class="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-burgundy-deep/80 border border-accent/30 text-gold-light text-body-sm font-semibold mb-6 backdrop-blur-md">
+<span data-couple="partnerName1"></span>
+<span class="text-accent">❤️</span>
+<span data-couple="partnerName2"></span>
+</div>
+<!-- Main Heading -->
+<h1 class="font-headline text-display-lg-mobile md:text-display-lg text-blush font-extrabold max-w-2xl mb-4 leading-tight text-balance" data-couple="quoteMain">
+      «إلى أجمل حاجة حصلت في حياتي»
+    </h1>
+<!-- Subtitle -->
+<p class="font-body text-body-lg text-blush/80 max-w-xl mb-10 leading-relaxed text-pretty" data-couple="quoteSub">
+      المكان ده معمول مخصوص علشانك، علشان كل لحظة حلوة بينا تستاهل تفضل موجودة.
+    </p>
+<!-- Start Button -->
+<button class="group relative inline-flex items-center gap-3 px-10 py-4 rounded-full bg-gradient-to-r from-burgundy via-burgundy-deep to-burgundy border border-accent text-blush font-semibold shadow-2xl shadow-burgundy-deep/80 hover:shadow-accent/40 hover:scale-105 active:scale-95 transition-all duration-300" id="enter-experience-btn" type="button">
+<span class="material-symbols-outlined text-accent group-hover:scale-125 transition-transform" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="text-label-lg font-semibold">ابدئي حكايتنا ❤️</span>
+</button>
+<p class="demo-note" id="demo-note"></p></section>
+<!-- ============================================================== -->
+<!-- MAIN EXPERIENCE CONTAINER                                       -->
+<!-- ============================================================== -->
+<div aria-hidden="true" class="opacity-0 transition-opacity duration-700 min-h-screen pb-24 md:pb-12" id="main-experience" inert="" hidden>
+<!-- Unified Desktop & Tablet Navigation Header -->
+<header class="sticky top-0 z-40 glass-header px-6 py-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="w-9 h-9 rounded-full bg-accent/20 border border-accent/40 text-accent flex items-center justify-center">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</span>
+<div class="flex flex-col">
+<span class="font-headline font-bold text-blush text-label-lg">حكايتنا</span>
+<span class="font-script text-label-sm text-gold-light" data-couple="englishTitle"></span>
+</div>
+</div>
+<!-- Desktop Nav Items -->
+<nav class="hidden md:flex items-center gap-6 font-headline text-body-sm font-medium text-blush/80">
+<a class="nav-link-item hover:text-accent transition-colors" href="#story">حكايتنا</a>
+<a class="nav-link-item hover:text-accent transition-colors" href="#memories">ذكرياتنا</a>
+<a class="nav-link-item hover:text-accent transition-colors" href="#reasons">ليه بحبك</a>
+<a class="nav-link-item hover:text-accent transition-colors" href="#album">ألبوم الصور</a>
+<a class="nav-link-item hover:text-accent transition-colors" href="#letters">رسايلي ليكي</a>
+<a class="nav-link-item hover:text-accent transition-colors" href="#dreams">أحلامنا</a>
+<a class="nav-link-item text-gold-light hover:text-accent transition-colors flex items-center gap-1" href="#surprise">
+<span>مفاجأة</span>
+<span class="material-symbols-outlined text-body-sm">redeem</span>
+</a>
+</nav>
+<!-- Music Player Floating Widget Shortcut -->
+<div class="flex items-center gap-3">
+<div class="opacity-0 transition-opacity flex items-center gap-1" id="music-indicator">
+<div class="equalizer-bar"></div>
+<div class="equalizer-bar"></div>
+<div class="equalizer-bar"></div>
+<div class="equalizer-bar"></div>
+</div>
+<button aria-label="تشغيل الموسيقى" class="w-10 h-10 rounded-full bg-burgundy/80 border border-accent/40 text-gold-light hover:text-blush hover:border-accent flex items-center justify-center transition-all shadow-md" id="music-toggle-btn" type="button">
+<span class="material-symbols-outlined text-headline-sm" id="music-icon">music_note</span>
+</button>
+</div>
+</header>
+<!-- MAIN BODY SECTIONS -->
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24 pt-8">
+<!-- ============================================================ -->
+<!-- 3. OUR LOVE STORY (Counter & Couple Showcase)                 -->
+<!-- ============================================================ -->
+<section class="pt-6" id="story">
+<div class="text-center max-w-2xl mx-auto mb-10">
+<span class="text-accent text-body-sm font-semibold tracking-wider">البداية الحقيقية</span>
+<h2 class="font-headline text-headline-lg-mobile md:text-headline-lg text-blush font-bold mt-1">
+            حكايتنا بدأت هنا
+          </h2>
+<p class="font-body text-body-md text-blush/75 mt-2">
+            من اليوم اللي دخلتي فيه حياتي، وكل ثانية بتمر ليها معنى وطعم تاني خالص.
+          </p>
+</div>
+<!-- Couple Cards with Connecting Heart -->
+<div class="relative flex flex-col md:flex-row items-center justify-center gap-8 mb-16">
+<!-- Partner 1 -->
+<div class="w-64 text-center">
+<div class="relative w-44 h-44 mx-auto rounded-full p-1.5 bg-gradient-to-tr from-accent via-dusty-rose to-burgundy shadow-2xl mb-4">
+<img alt="" class="w-full h-full object-cover rounded-full" data-photo="coverPhoto1" loading="lazy" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' rx='30' fill='%234A0E17'/%3E%3Cpath d='M100 160 36 98C-1 48 65 12 100 63c35-51 101-15 64 35Z' fill='%23A25768' stroke='%23D4AF37' stroke-width='3'/%3E%3C/svg%3E"/>
+<div class="absolute bottom-1 right-2 w-8 h-8 rounded-full bg-burgundy border-2 border-accent text-accent flex items-center justify-center text-label-sm">
+                👑
+              </div>
+</div>
+<h3 class="font-headline text-headline-sm text-blush font-bold" data-couple="partnerName1"></h3>
+<p class="font-body text-body-sm text-gold-light mt-1"></p>
+</div>
+<!-- Animated Connecting Heart Badge -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-burgundy border-2 border-accent text-accent flex items-center justify-center shadow-xl shadow-accent/20 animate-heart-pulse">
+<span class="material-symbols-outlined text-headline-lg" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<span class="font-script text-accent text-headline-sm mt-2">Forever Together</span>
+</div>
+<!-- Partner 2 -->
+<div class="w-64 text-center">
+<div class="relative w-44 h-44 mx-auto rounded-full p-1.5 bg-gradient-to-tr from-dusty-rose via-accent to-burgundy shadow-2xl mb-4">
+<img alt="" class="w-full h-full object-cover rounded-full" data-photo="coverPhoto2" loading="lazy" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' rx='30' fill='%234A0E17'/%3E%3Cpath d='M100 160 36 98C-1 48 65 12 100 63c35-51 101-15 64 35Z' fill='%23A25768' stroke='%23D4AF37' stroke-width='3'/%3E%3C/svg%3E"/>
+<div class="absolute bottom-1 left-2 w-8 h-8 rounded-full bg-burgundy border-2 border-accent text-accent flex items-center justify-center text-label-sm">
+                🤍
+              </div>
+</div>
+<h3 class="font-headline text-headline-sm text-blush font-bold" data-couple="partnerName2"></h3>
+<p class="font-body text-body-sm text-gold-light mt-1"></p>
+</div>
+</div>
+<!-- Live Relationship Counter -->
+<div class="max-w-3xl mx-auto rounded-3xl glass-panel p-8 text-center relative overflow-hidden shadow-2xl">
+<div class="text-body-sm font-semibold text-accent mb-2">إحنا سوا بقالنا</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6">
+<div class="p-4 rounded-2xl bg-burgundy/60 border border-blush/10">
+<span class="block font-headline text-display-lg-mobile md:text-headline-lg font-extrabold text-gold-light tabular-nums" id="counter-days">0</span>
+<span class="text-label-sm text-blush/70 font-medium">يوم</span>
+</div>
+<div class="p-4 rounded-2xl bg-burgundy/60 border border-blush/10">
+<span class="block font-headline text-display-lg-mobile md:text-headline-lg font-extrabold text-blush tabular-nums" id="counter-hours">00</span>
+<span class="text-label-sm text-blush/70 font-medium">ساعة</span>
+</div>
+<div class="p-4 rounded-2xl bg-burgundy/60 border border-blush/10">
+<span class="block font-headline text-display-lg-mobile md:text-headline-lg font-extrabold text-blush tabular-nums" id="counter-minutes">00</span>
+<span class="text-label-sm text-blush/70 font-medium">دقيقة</span>
+</div>
+<div class="p-4 rounded-2xl bg-burgundy/60 border border-blush/10">
+<span class="block font-headline text-display-lg-mobile md:text-headline-lg font-extrabold text-accent tabular-nums" id="counter-seconds">00</span>
+<span class="text-label-sm text-blush/70 font-medium">ثانية</span>
+</div>
+</div>
+<p class="font-body text-body-sm text-blush/60 mt-6">
+            وكل ثانية بتعدي وإنتي في قلبي بتسوى عُمري كله 💍
+          </p>
+</div>
+</section>
+<!-- ============================================================ -->
+<!-- 4. OUR MEMORIES (Interactive Milestone Timeline)              -->
+<!-- ============================================================ -->
+<section class="scroll-mt-24" id="memories">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<span class="text-accent text-body-sm font-semibold tracking-wider">شريط ذكرياتنا</span>
+<h2 class="font-headline text-headline-lg-mobile md:text-headline-lg text-blush font-bold mt-1">
+            أهم محطات حكايتنا
+          </h2>
+<p class="font-body text-body-md text-blush/75 mt-2">
+            كل خطوة مشيناها سوا رسمت في قلوبنا علامة مابتتمسحش أبداً.
+          </p>
+</div>
+<div class="relative">
+<!-- Central Timeline Spine (Desktop) -->
+<div class="hidden md:block absolute top-4 bottom-4 left-1/2 -translate-x-1/2 w-0.5 bg-gradient-to-b from-accent via-dusty-rose to-accent/20"></div>
+<!-- Dynamic Timeline Container -->
+<div class="space-y-12" id="memories-timeline-container">
+<!-- Injected by JavaScript from config.js -->
+</div>
+</div>
+</section>
+<!-- ============================================================ -->
+<!-- 5. REASONS WHY I LOVE YOU                                     -->
+<!-- ============================================================ -->
+<section class="scroll-mt-24" id="reasons">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<span class="text-accent text-body-sm font-semibold tracking-wider">من صميم قلبي</span>
+<h2 class="font-headline text-headline-lg-mobile md:text-headline-lg text-blush font-bold mt-1">
+            أسباب بحبك عشانها
+          </h2>
+<p class="font-body text-body-md text-blush/75 mt-2">
+            لو قعدت أعد أسباب حبي ليكي هحتاج عمر فوق عمري.. بس دي شوية أسرار من قلبي.
+          </p>
+</div>
+<!-- Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10" id="reasons-cards-container">
+<!-- Injected by JavaScript from config.js -->
+</div>
+<!-- Random Surprise Button -->
+<div class="text-center">
+<button class="inline-flex items-center gap-3 px-8 py-3.5 rounded-full bg-burgundy-deep border border-accent/60 text-gold-light hover:text-blush hover:border-accent hover:shadow-lg hover:shadow-accent/25 transition-all duration-300 font-headline font-semibold" id="random-reason-btn" type="button">
+<span class="material-symbols-outlined text-accent text-headline-sm">auto_awesome</span>
+<span class="text-label-lg font-semibold">سبب جديد بحبك عشانه ✨</span>
+</button>
+</div>
+<!-- Surprise Reason Modal Pop -->
+<div aria-label="سبب بحبك عشانه" aria-modal="true" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-burgundy-deep/80 backdrop-blur-md" id="random-reason-modal" role="dialog" tabindex="-1">
+<div class="w-full max-w-md p-8 rounded-3xl bg-burgundy-deep border border-accent text-center shadow-2xl relative">
+<button aria-label="إغلاق" class="absolute top-4 left-4 text-blush/60 hover:text-blush" onclick="closeReasonModal()">
+<span class="material-symbols-outlined text-headline-md">close</span>
+</button>
+<div class="w-16 h-16 mx-auto rounded-full bg-accent/20 text-accent flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-headline-lg" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<h3 class="font-headline text-headline-sm text-gold-light font-bold mb-3" id="random-reason-title">بحبك علشانك انتي</h3>
+<p class="font-body text-body-md text-blush/90 leading-relaxed mb-6" id="random-reason-text">
+              تفاصيلك الحلوة وطاقتك اللي بتهون عليا أي صعب.
+            </p>
+<button class="px-6 py-2.5 rounded-full bg-dusty-rose text-blush text-label-sm font-semibold hover:bg-burgundy" onclick="closeReasonModal()">
+<span>دايماً في قلبي 🤍</span>
+</button>
+</div>
+</div>
+</section>
+<!-- ============================================================ -->
+<!-- 6. OUR PHOTO ALBUM (Polaroid Gallery)                         -->
+<!-- ============================================================ -->
+<section class="scroll-mt-24" id="album">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<span class="text-accent text-body-sm font-semibold tracking-wider">ألبوم الذكريات</span>
+<h2 class="font-headline text-headline-lg-mobile md:text-headline-lg text-blush font-bold mt-1">
+            صورنا الحلوة سوا
+          </h2>
+<p class="font-body text-body-md text-blush/75 mt-2">
+            كل صورة هي حكاية متجمدة في الزمان.. اضغطي على أي صورة لتكبيرها.
+          </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="photo-gallery-grid">
+<!-- Injected by JavaScript from config.js -->
+</div>
+<!-- Fullscreen Lightbox Modal -->
+<div aria-label="ألبوم الصور" aria-modal="true" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-burgundy-deep/95 backdrop-blur-lg" id="photo-lightbox" role="dialog" tabindex="-1">
+<button aria-label="إغلاق" class="absolute top-6 left-6 text-blush/80 hover:text-blush p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors" onclick="closeLightbox()">
+<span class="material-symbols-outlined text-headline-lg">close</span>
+</button>
+<div class="max-w-2xl w-full flex flex-col items-center">
+<img alt="صورة مكبرة" class="max-h-[75vh] w-auto rounded-2xl shadow-2xl border border-accent/40 object-contain mb-4" id="lightbox-image"/>
+<p class="text-gold-light text-center font-headline text-body-lg font-semibold" id="lightbox-caption"></p>
+</div>
+<div class="gallery-controls"><button aria-label="الصورة السابقة" id="photo-prev" type="button">‹</button><span id="photo-position"></span><button aria-label="الصورة التالية" id="photo-next" type="button">›</button></div></div>
+</section>
+<!-- ============================================================ -->
+<!-- 7. LOVE LETTERS (Animated Envelopes)                          -->
+<!-- ============================================================ -->
+<section class="scroll-mt-24" id="letters">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<span class="text-accent text-body-sm font-semibold tracking-wider">صندوق الجوابات</span>
+<h2 class="font-headline text-headline-lg-mobile md:text-headline-lg text-blush font-bold mt-1">
+            جوابات خاصة لقلبك
+          </h2>
+<p class="font-body text-body-md text-blush/75 mt-2">
+            افتحي الجواب المناسب للوقت اللي حاسة بيه.. كل كلمة مكتوبة ليكي لوحدك.
+          </p>
+</div>
+<!-- Letters Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="letters-envelopes-grid">
+<!-- Injected by JavaScript from config.js -->
+</div>
+<!-- Letter Reading Dialog -->
+<div aria-label="رسالة حب" aria-modal="true" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-burgundy-deep/90 backdrop-blur-md" id="letter-modal" role="dialog" tabindex="-1">
+<div class="w-full max-w-xl rounded-3xl bg-parchment text-burgundy-deep shadow-2xl border-2 border-accent overflow-hidden relative animate-surface-enter">
+<div class="bg-gradient-to-r from-burgundy via-dusty-rose to-burgundy text-blush p-6 relative border-b border-accent/30 text-center">
+<button aria-label="إغلاق" class="absolute top-5 left-5 text-blush/70 hover:text-blush" onclick="closeLetter()">
+<span class="material-symbols-outlined text-headline-md">close</span>
+</button>
+<span class="text-label-sm text-gold-light font-semibold block mb-1">رسالة خاصة ليكي</span>
+<h3 class="font-headline text-headline-sm font-bold text-blush" id="letter-modal-title"></h3>
+</div>
+<div class="p-8 max-h-[60vh] overflow-y-auto">
+<p class="font-body text-body-lg text-burgundy-deep leading-relaxed whitespace-pre-line" id="letter-modal-body"></p>
+</div>
+<div class="p-4 bg-blush/40 flex justify-between items-center border-t border-accent/20">
+<span class="font-script text-dusty-rose text-headline-md px-4">With All My Heart</span>
+<button class="px-6 py-2 rounded-full bg-burgundy text-blush text-label-sm font-semibold hover:bg-burgundy-deep" onclick="closeLetter()">
+<span>بحبك دايماً 🤍</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================================ -->
+<!-- 8. OUR FUTURE TOGETHER (Shared Dreams)                        -->
+<!-- ============================================================ -->
+<section class="scroll-mt-24" id="dreams">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<span class="text-accent text-body-sm font-semibold tracking-wider">بكرة اللي جاي</span>
+<h2 class="font-headline text-headline-lg-mobile md:text-headline-lg text-blush font-bold mt-1">
+            أحلامنا سوا
+          </h2>
+<p class="font-body text-body-md text-blush/75 mt-2">
+            كل حاجة بنتمناها هنعيشها خطوة بخطوة وإيدينا في إيد بعض.
+          </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="dreams-cards-container">
+<!-- Injected by JavaScript from config.js -->
+</div>
+</section>
+<!-- ============================================================ -->
+<!-- 10. SURPRISE SCREEN (Secret Gift Box)                         -->
+<!-- ============================================================ -->
+<section class="scroll-mt-24 text-center" id="surprise">
+<div class="max-w-2xl mx-auto rounded-3xl glass-panel p-10 border border-accent/40 shadow-2xl relative overflow-hidden flex flex-col items-center">
+<div class="absolute -top-12 -right-12 w-40 h-40 bg-accent/20 rounded-full blur-2xl pointer-events-none"></div>
+<span class="text-accent text-body-sm font-semibold tracking-wider">مفاجأة مستنياكي</span>
+<h2 class="font-headline text-headline-lg-mobile md:text-headline-lg text-blush font-bold mt-2 mb-3">
+            في مفاجأة صغيرة مستنياكي 🎁
+          </h2>
+<p class="font-body text-body-md text-blush/80 mb-8 max-w-md mx-auto">
+            صندوق مقفول بالمحبة.. اضغطي عليه عشان تفتحي هديتك الخاصة.
+          </p>
+<!-- Interactive Gift Box Icon -->
+<button aria-label="افتحي المفاجأة" class="cursor-pointer inline-block group" id="surprise-box-trigger" type="button">
+<div class="w-28 h-28 mx-auto rounded-3xl bg-gradient-to-tr from-accent via-dusty-rose to-burgundy p-1 shadow-2xl group-hover:scale-110 active:scale-95 transition-all duration-300">
+<div class="w-full h-full rounded-3xl bg-burgundy-deep flex flex-col items-center justify-center border border-accent/40 group-hover:border-accent">
+<span class="material-symbols-outlined text-display-lg-mobile text-accent group-hover:rotate-12 transition-transform">redeem</span>
+<span class="text-label-sm text-gold-light mt-1 font-semibold">افتحيني</span>
+</div>
+</div>
+</button>
+</div>
+<!-- Surprise Modal Details -->
+<div aria-label="مفاجأة" aria-modal="true" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-burgundy-deep/90 backdrop-blur-md" id="surprise-modal" role="dialog" tabindex="-1">
+<div class="w-full max-w-md p-8 rounded-3xl bg-burgundy-deep border-2 border-accent text-center shadow-2xl relative">
+<button aria-label="إغلاق" class="absolute top-4 left-4 text-blush/60 hover:text-blush" onclick="closeSurprise()">
+<span class="material-symbols-outlined text-headline-md">close</span>
+</button>
+<div class="w-20 h-20 mx-auto rounded-full bg-accent/20 text-accent flex items-center justify-center mb-4 animate-bounce">
+<span class="material-symbols-outlined text-display-lg-mobile" style="font-variation-settings: 'FILL' 1;">redeem</span>
+</div>
+<h3 class="font-headline text-headline-md text-gold-light font-bold mb-3">مفاجأتي ليكي يا ست البنات ❤️</h3>
+<p class="font-body text-body-md text-blush/90 leading-relaxed mb-6" id="surprise-secret-message"></p>
+<div class="p-3 rounded-xl bg-burgundy/80 border border-accent/30 text-body-sm text-gold-light mb-6">
+              رمز هديتنا الخاص: <span class="font-bold text-accent" id="gift-code"></span>
+</div>
+<button class="w-full py-3 rounded-full bg-gradient-to-r from-dusty-rose to-burgundy border border-accent text-blush font-semibold" onclick="closeSurprise()">
+<span class="text-label-lg font-semibold">أغلى مفاجأة في الدنيا 🤍</span>
+</button>
+</div>
+</div>
+</section>
+<!-- ============================================================ -->
+<!-- 11. FINAL SCREEN (Emotional Fullscreen Ending)                -->
+<!-- ============================================================ -->
+<section class="py-20 text-center relative" id="final-screen">
+<div class="relative z-10 max-w-3xl mx-auto">
+<div class="w-20 h-20 mx-auto rounded-full bg-accent/20 border-2 border-accent text-accent flex items-center justify-center shadow-2xl shadow-accent/40 animate-heart-pulse mb-8">
+<span class="material-symbols-outlined text-headline-lg" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<h2 class="font-headline text-display-lg-mobile md:text-display-lg text-blush font-extrabold mb-6 leading-tight" data-couple="finalQuote">
+            «ولو رجع بيا الزمن ألف مرة، هختارك في كل مرة»
+          </h2>
+<p class="font-script text-accent text-headline-md md:text-headline-lg mb-10">
+            You will always be my greatest blessing.
+          </p>
+<button class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-burgundy/80 border border-accent/50 text-gold-light hover:text-blush hover:border-accent hover:bg-burgundy hover:scale-105 active:scale-95 transition-all duration-300 font-headline font-bold" id="restart-experience-btn" type="button">
+<span class="material-symbols-outlined text-accent text-headline-sm">replay</span>
+<span class="text-label-lg font-semibold">نعيش الحكاية تاني ❤️</span>
+</button>
+</div>
+</section>
+</main>
+<!-- Unified Mobile Bottom Navigation -->
+<nav class="md:hidden fixed bottom-0 left-0 right-0 z-40 glass-header px-4 py-2.5 flex items-center justify-around border-t border-accent/20 mobile-nav">
+<a class="flex flex-col items-center text-label-sm text-blush/70 hover:text-accent" href="#welcome-screen">
+<span class="material-symbols-outlined text-headline-sm">home</span>
+<span class="text-[11px] mt-0.5">الرئيسية</span>
+</a>
+<a class="flex flex-col items-center text-label-sm text-blush/70 hover:text-accent" href="#story">
+<span class="material-symbols-outlined text-headline-sm">favorite</span>
+<span class="text-[11px] mt-0.5">حكايتنا</span>
+</a>
+<a class="flex flex-col items-center text-label-sm text-blush/70 hover:text-accent" href="#memories">
+<span class="material-symbols-outlined text-headline-sm">auto_stories</span>
+<span class="text-[11px] mt-0.5">ذكرياتنا</span>
+</a>
+<a class="flex flex-col items-center text-label-sm text-blush/70 hover:text-accent" href="#letters">
+<span class="material-symbols-outlined text-headline-sm">mail</span>
+<span class="text-[11px] mt-0.5">رسايلي</span>
+</a>
+<a class="flex flex-col items-center text-label-sm text-blush/70 hover:text-accent" href="#reasons"><span class="material-symbols-outlined text-headline-sm">favorite</span><span class="text-[11px] mt-0.5">بحبك</span></a><a class="flex flex-col items-center text-label-sm text-blush/70 hover:text-accent" href="#album"><span class="material-symbols-outlined text-headline-sm">photo_camera</span><span class="text-[11px] mt-0.5">صورنا</span></a><a class="flex flex-col items-center text-label-sm text-blush/70 hover:text-accent" href="#dreams"><span class="material-symbols-outlined text-headline-sm">stars</span><span class="text-[11px] mt-0.5">أحلامنا</span></a><a class="flex flex-col items-center text-label-sm text-accent" href="#surprise">
+<span class="material-symbols-outlined text-headline-sm">redeem</span>
+<span class="text-[11px] mt-0.5">مفاجأة</span>
+</a>
+</nav>
+<aside aria-label="مشغل الموسيقى" class="hidden music-panel glass-panel" id="music-panel"><div class="music-panel-head"><strong id="music-title">لحن حكايتنا</strong><button aria-label="إخفاء المشغل" id="music-close" type="button">×</button></div><audio controls="" id="love-audio" loop="" preload="none"></audio><label class="music-volume">مستوى الصوت <input id="music-volume" max="1" min="0" step="0.05" type="range" value="0.45"/></label><p id="music-error" role="status"></p></aside></div>
+<!-- Scripts -->
+</script><script>/* ==========================================================
+   Our Love Story — حكايتنا ❤️
+   Interactive Engine & Audio Synthesizer (Zero External API)
+   ========================================================== */
+
+document.addEventListener('DOMContentLoaded', bootStory);
+
+function initLoveStory() {
+  const config = window.LoveStoryConfig || {};
+
+  applyPersonalization(config);
+  // Setup DOM elements
+  setupWelcomeScreen(config);
+  setupCounter(config);
+  setupMemories(config);
+  setupReasons(config);
+  setupPhotoAlbum(config);
+  setupLoveLetters(config);
+  setupDreams(config);
+  setupSurprise(config);
+  setupFinalScreen(config);
+  if(config.music?.src) setupMusicPlayer(config); else {document.getElementById('music-toggle-btn').hidden=true;document.getElementById('music-indicator').hidden=true;}
+  setupParticles();
+  setupNavigation();
+  setupAccessibility();
+  syncIcons();
+  finishStory(config);
+}
+
+/* 1. Welcome Screen Transition */
+function setupWelcomeScreen(config) {
+  const enterBtn = document.getElementById('enter-experience-btn');
+  const welcomeScreen = document.getElementById('welcome-screen');
+  const mainContent = document.getElementById('main-experience');
+  const musicToggle = document.getElementById('music-toggle-btn');
+
+  if (enterBtn && welcomeScreen && mainContent) {
+    enterBtn.addEventListener('click', () => {
+      welcomeScreen.classList.add('opacity-0', 'pointer-events-none', 'scale-105');
+      welcomeScreen.inert = true;
+      setTimeout(() => {
+        if (!welcomeScreen.inert) return;
+        welcomeScreen.style.display = 'none';
+        mainContent.inert = false;
+        mainContent.removeAttribute('aria-hidden');
+        mainContent.classList.remove('opacity-0');
+        mainContent.classList.add('opacity-100');
+        window.scrollTo({ top: 0, behavior: 'instant' });
+        document.getElementById('story').setAttribute('tabindex','-1');
+        document.getElementById('story').focus({preventScroll:true});
+      }, matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 700);
+    });
+  }
+}
+
+/* 2. Live Relationship Counter */
+function setupCounter(config) {
+  const startDateStr = config.couple?.storyStartDate;
+  const startDate = new Date(startDateStr);
+
+  const daysEl = document.getElementById('counter-days');
+  const hoursEl = document.getElementById('counter-hours');
+  const minutesEl = document.getElementById('counter-minutes');
+  const secondsEl = document.getElementById('counter-seconds');
+
+  function updateCounter() {
+    const now = new Date();
+    const diff = Number.isFinite(+startDate) ? Math.max(0, now - startDate) : 0;
+
+    const seconds = Math.floor((diff / 1000) % 60);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+    if (daysEl) daysEl.textContent = days.toLocaleString('ar-EG');
+    if (hoursEl) hoursEl.textContent = hours.toString().padStart(2, '0');
+    if (minutesEl) minutesEl.textContent = minutes.toString().padStart(2, '0');
+    if (secondsEl) secondsEl.textContent = seconds.toString().padStart(2, '0');
+  }
+
+  updateCounter();
+  setInterval(updateCounter, 1000);
+}
+
+/* 3. Memories Timeline */
+function setupMemories(config) {
+  const container = document.getElementById('memories-timeline-container');
+  if (!container || !config.memories) return;
+
+  container.innerHTML = config.memories.map((mem, index) => {
+    const isEven = index % 2 === 0;
+    return `
+      <div class="relative flex flex-col md:flex-row ${isEven ? 'md:flex-row-reverse' : ''} items-center gap-8 group">
+        <!-- Milestone Dot -->
+        <div class="absolute left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-burgundy-deep border-2 border-accent text-accent flex items-center justify-center shadow-lg shadow-accent/20 z-10 hidden md:flex">
+          <span class="material-symbols-outlined text-sm">${escapeHTML(mem.icon || 'favorite')}</span>
+        </div>
+
+        <!-- Content Card -->
+        <div class="w-full md:w-[calc(50%-2rem)]">
+          <article class="p-6 rounded-3xl bg-burgundy-deep/70 backdrop-blur-md border border-accent/20 hover:border-accent/50 shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="overflow-hidden rounded-2xl mb-4 aspect-video border border-blush/10 relative group-hover:shadow-lg">
+              <img src="${escapeHTML(mem.image)}" alt="${escapeHTML(mem.title)}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-burgundy-deep/80 backdrop-blur-sm border border-accent/30 text-gold-light text-xs font-semibold">
+                ${escapeHTML(mem.date)}
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-blush mb-2 font-headline flex items-center gap-2">
+              <span class="text-accent text-base md:hidden">❤️</span>
+              ${escapeHTML(mem.title)}
+            </h3>
+            <p class="text-blush/80 text-sm leading-relaxed font-body">
+              ${escapeHTML(mem.message)}
+            </p>
+          </article>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+/* 4. Reasons Why I Love You */
+function setupReasons(config) {
+  const container = document.getElementById('reasons-cards-container');
+  const surpriseBtn = document.getElementById('random-reason-btn');
+  const surpriseDisplay = document.getElementById('random-reason-modal');
+  const surpriseText = document.getElementById('random-reason-text');
+  const surpriseTitle = document.getElementById('random-reason-title');
+
+  if (!container || !config.reasons) return;
+
+  container.innerHTML = config.reasons.map((reason, idx) => `
+    <button type="button" class="reason-card group cursor-pointer" aria-expanded="false" onclick="toggleReasonFlip(this)">
+      <div class="relative min-h-60 rounded-3xl p-6 bg-gradient-to-b from-burgundy-deep/90 to-burgundy/80 border border-dusty-rose/30 hover:border-accent/60 shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden">
+        <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-accent/10 rounded-full blur-xl pointer-events-none"></div>
+        <div>
+          <span class="w-10 h-10 rounded-full bg-dusty-rose/30 text-accent flex items-center justify-center mb-4 text-sm font-bold">
+            ${(idx + 1).toLocaleString('ar-EG')}
+          </span>
+          <h3 class="text-lg font-bold text-blush mb-2 font-headline">${escapeHTML(reason.title)}</h3>
+          <p class="reason-description text-blush/75 text-sm leading-relaxed" hidden>${escapeHTML(reason.description)}</p>
+        </div>
+        <div class="text-left text-accent text-xs flex items-center gap-1 font-semibold">
+          <span class="reason-prompt">اضغطي علشان تعرفي السبب</span>
+          <span class="material-symbols-outlined text-sm">favorite</span>
+        </div>
+      </div>
+    </button>
+  `).join('');
+
+  if (surpriseBtn && surpriseDisplay) {
+    surpriseBtn.addEventListener('click', () => {
+      const reasons = config.reasons;
+      if (!reasons.length) return;
+      const choices = reasons.filter(r => r !== window.lastReason);
+      const pool = choices.length ? choices : reasons;
+      const randomReason = pool[Math.floor(Math.random() * pool.length)];
+      window.lastReason = randomReason;
+      if (surpriseText && surpriseTitle) {
+        surpriseTitle.textContent = randomReason.title;
+        surpriseText.textContent = randomReason.description;
+      }
+      surpriseDisplay.classList.remove('hidden');
+      triggerHeartBurst();
+    });
+  }
+}
+
+function closeReasonModal() {
+  const modal = document.getElementById('random-reason-modal');
+  if (modal) modal.classList.add('hidden');
+}
+
+/* 5. Photo Album & Lightbox */
+function setupPhotoAlbum(config) {
+  const container = document.getElementById('photo-gallery-grid');
+  const lightbox = document.getElementById('photo-lightbox');
+  const lightboxImg = document.getElementById('lightbox-image');
+  const lightboxCaption = document.getElementById('lightbox-caption');
+
+  if (!container || !config.photos) return;
+
+  container.innerHTML = config.photos.map((photo, index) => `
+    <div role="button" tabindex="0" class="polaroid-card polaroid-frame group cursor-pointer bg-[#FFFDF9] p-4 pb-8 rounded-2xl shadow-2xl border border-blush/20 transform ${index % 2 === 0 ? 'rotate-1' : '-rotate-1'} hover:rotate-0 hover:scale-105 transition-all duration-300"
+         onclick="openLightbox(${index})">
+      <div class="aspect-square overflow-hidden rounded-xl bg-burgundy/10 mb-4 border border-blush/30">
+        <img src="${escapeHTML(photo.url)}" alt="${escapeHTML(photo.caption)}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+      </div>
+      <p class="text-burgundy-deep font-body text-center text-sm font-semibold tracking-wide">
+        ${escapeHTML(photo.caption)}
+      </p>
+      <span class="block text-center text-xs text-dusty-rose mt-1">${escapeHTML(photo.tag || 'ذكرياتنا')}</span>
+    </div>
+  `).join('');
+
+  let currentPhoto = 0;
+  window.openLightbox = function(index) {
+    if (!config.photos.length) return;
+    currentPhoto = (index + config.photos.length) % config.photos.length;
+    const {url, caption} = config.photos[currentPhoto];
+    document.getElementById("photo-position").textContent = `${currentPhoto+1} / ${config.photos.length}`;
+    if (lightbox && lightboxImg && lightboxCaption) {
+      lightboxImg.src = url;
+      lightboxCaption.textContent = caption;
+      lightbox.classList.remove('hidden');
+    }
+  };
+
+  window.closeLightbox = function() {
+    if (lightbox) lightbox.classList.add('hidden');
+  };
+  document.getElementById('photo-prev').onclick = () => openLightbox(currentPhoto-1);
+  document.getElementById('photo-next').onclick = () => openLightbox(currentPhoto+1);
+  let x = null;
+  lightbox.addEventListener('touchstart', e => { x = e.changedTouches[0].screenX; }, {passive:true});
+  lightbox.addEventListener('touchend', e => { if(x===null) return; const d=e.changedTouches[0].screenX-x; if(Math.abs(d)>45) openLightbox(currentPhoto+(d>0?1:-1)); x=null; }, {passive:true});
+  document.addEventListener('keydown', e=> { if(lightbox.classList.contains('hidden')) return; if(e.key==='ArrowLeft') openLightbox(currentPhoto+1); if(e.key==='ArrowRight') openLightbox(currentPhoto-1); });
+}
+
+/* 6. Love Letters Envelopes */
+function setupLoveLetters(config) {
+  const container = document.getElementById('letters-envelopes-grid');
+  const modal = document.getElementById('letter-modal');
+  const modalTitle = document.getElementById('letter-modal-title');
+  const modalBody = document.getElementById('letter-modal-body');
+
+  if (!container || !config.letters) return;
+
+  container.innerHTML = config.letters.map((letter, index) => `
+    <div role="button" tabindex="0" class="envelope-item cursor-pointer group" onclick="openLetter(${index})">
+      <div class="relative bg-gradient-to-br from-[#FFF8F0] to-[#F7EDE2] rounded-2xl p-6 border-2 border-accent/30 hover:border-accent shadow-xl hover:shadow-accent/20 transition-all duration-300 transform group-hover:-translate-y-2">
+        <!-- Envelope Top Flap Simulation -->
+        <div class="flex items-center justify-between mb-4 border-b border-burgundy/10 pb-3">
+          <span class="w-10 h-10 rounded-full bg-burgundy text-gold-light flex items-center justify-center shadow-md">
+            <span class="material-symbols-outlined text-lg">${escapeHTML(letter.icon || 'mail')}</span>
+          </span>
+          <span class="text-xs px-3 py-1 rounded-full bg-dusty-rose/20 text-burgundy font-semibold">
+            ${escapeHTML(letter.badge || 'جواب خاص')}
+          </span>
+        </div>
+
+        <h3 class="text-lg font-bold text-burgundy font-headline mb-2 group-hover:text-dusty-rose transition-colors">
+          ${escapeHTML(letter.category)}
+        </h3>
+        <p class="text-burgundy/60 text-xs font-body mb-4">
+          اضغطي هنا لفتح الجواب وقراءة رسالتي ليكي...
+        </p>
+
+        <div class="flex items-center justify-between text-xs text-accent font-semibold">
+          <span>افتحي الظرف</span>
+          <span class="material-symbols-outlined text-sm group-hover:translate-x-[-4px] transition-transform">drafts</span>
+        </div>
+      </div>
+    </div>
+  `).join('');
+
+  window.openLetter = function(index) {
+    const letter = config.letters[index];
+    if (!letter || !modal || !modalTitle || !modalBody) return;
+
+    modalTitle.textContent = letter.category;
+    modalBody.textContent = letter.content;
+    modal.classList.remove('hidden');
+    triggerHeartBurst();
+  };
+
+  window.closeLetter = function() {
+    if (modal) modal.classList.add('hidden');
+  };
+}
+
+/* 7. Shared Dreams */
+function setupDreams(config) {
+  const container = document.getElementById('dreams-cards-container');
+  if (!container || !config.dreams) return;
+
+  container.innerHTML = config.dreams.map((dream) => `
+    <article class="p-6 rounded-3xl bg-burgundy-deep/80 backdrop-blur-sm border border-accent/20 hover:border-accent/50 shadow-xl transition-all duration-300 flex flex-col justify-between">
+      <div>
+        <div class="w-12 h-12 rounded-2xl bg-dusty-rose/30 text-accent flex items-center justify-center mb-4">
+          <span class="material-symbols-outlined text-2xl">${escapeHTML(dream.icon || 'star')}</span>
+        </div>
+        <h3 class="text-lg font-bold text-blush font-headline mb-2">${escapeHTML(dream.title)}</h3>
+        <p class="text-blush/80 text-sm leading-relaxed font-body mb-4">${escapeHTML(dream.description)}</p>
+      </div>
+      <div class="pt-3 border-t border-blush/10 flex items-center justify-between text-xs">
+        <span class="text-gold-light font-semibold">${escapeHTML(dream.status)}</span>
+        <span class="text-blush/50">سوا بإذن الله</span>
+      </div>
+    </article>
+  `).join('');
+}
+
+/* 8. Surprise Box */
+function setupSurprise(config) {
+  const boxBtn = document.getElementById('surprise-box-trigger');
+  const modal = document.getElementById('surprise-modal');
+  const msgEl = document.getElementById('surprise-secret-message');
+
+  if (boxBtn && modal) {
+    boxBtn.addEventListener('click', () => {
+      if (msgEl && config.surprise) {
+        msgEl.textContent = config.surprise.secretMessage;
+      }
+      modal.classList.remove('hidden');
+      triggerHeartBurst();
+      triggerConfetti();
+    });
+  }
+
+  window.closeSurprise = function() {
+    if (modal) modal.classList.add('hidden');
+  };
+}
+
+/* 9. Final Screen Action */
+function setupFinalScreen(config) {
+  const restartBtn = document.getElementById('restart-experience-btn');
+  if (restartBtn) {
+    restartBtn.addEventListener('click', () => {
+      showWelcome();
+    });
+  }
+}
+
+/* 10. Web Audio Synthesizer (Romantic Music Player without external dependencies) */
+function setupMusicPlayer(config) {
+  const audio = document.getElementById('love-audio'), toggle = document.getElementById('music-toggle-btn'), panel = document.getElementById('music-panel');
+  const icon = document.getElementById('music-icon'), indicator = document.getElementById('music-indicator');
+  audio.src = config.music.src;
+  audio.volume = 0.45;
+  document.getElementById('music-title').textContent = config.music?.title || 'لحن حكايتنا';
+  document.getElementById('music-close').onclick = () => panel.classList.add('hidden');
+  document.getElementById('music-volume').oninput = e => { audio.volume=+e.target.value; };
+  document.getElementById('music-volume').value = audio.volume;
+  audio.addEventListener('volumechange',()=>document.getElementById('music-volume').value=audio.volume);
+  const refresh = () => { const playing=!audio.paused; setIcon(icon, playing?'pause':'music_note'); indicator.classList.toggle('opacity-0',!playing); toggle.setAttribute('aria-label',playing?'إيقاف الموسيقى':'تشغيل الموسيقى'); toggle.setAttribute('aria-pressed',String(playing)); };
+  audio.addEventListener('play',refresh); audio.addEventListener('pause',refresh);
+  audio.addEventListener('error',()=>document.getElementById('music-error').textContent='تعذر تشغيل الملف الصوتي.');
+  toggle.onclick = async () => { panel.classList.remove('hidden'); if(audio.paused) {try{await audio.play();}catch(e){document.getElementById('music-error').textContent='تعذر تشغيل الموسيقى. جربي مرة أخرى.';}} else audio.pause(); };
+}
+
+/* 11. Subtle Particles & Floating Hearts */
+function setupParticles() {
+  const container = document.getElementById('particles-canvas-container');
+  if (!container || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  const canvas = document.createElement('canvas');
+  canvas.className = 'w-full h-full absolute inset-0 pointer-events-none opacity-40';
+  container.appendChild(canvas);
+
+  const ctx = canvas.getContext('2d');
+  if (!ctx) return;
+  let width = (canvas.width = window.innerWidth);
+  let height = (canvas.height = window.innerHeight);
+
+  window.addEventListener('resize', () => {
+    width = canvas.width = window.innerWidth;
+    height = canvas.height = window.innerHeight;
+  });
+
+  const particles = [];
+  const count = Math.min(25, Math.floor(width / 50));
+
+  for (let i = 0; i < count; i++) {
+    particles.push({
+      x: Math.random() * width,
+      y: Math.random() * height,
+      size: Math.random() * 3 + 1,
+      speedY: Math.random() * 0.4 + 0.1,
+      speedX: (Math.random() - 0.5) * 0.3,
+      opacity: Math.random() * 0.5 + 0.2
+    });
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, width, height);
+    ctx.fillStyle = '#D4AF37';
+
+    particles.forEach(p => {
+      ctx.beginPath();
+      ctx.globalAlpha = p.opacity;
+      ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+      ctx.fill();
+
+      p.y -= p.speedY;
+      p.x += p.speedX;
+
+      if (p.y < 0) {
+        p.y = height;
+        p.x = Math.random() * width;
+      }
+    });
+
+    requestAnimationFrame(draw);
+  }
+
+  draw();
+}
+
+/* 12. Navigation Active State on Scroll */
+function setupNavigation() {
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('header nav a, .mobile-nav a');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    const scrollPos = window.scrollY + 200;
+
+    sections.forEach(section => {
+      const top = section.getBoundingClientRect().top + window.scrollY;
+      const height = section.offsetHeight;
+      if (scrollPos >= top && scrollPos < top + height) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('text-accent', 'font-bold');
+      link.removeAttribute('aria-current');
+      if (link.getAttribute('href') === `#${current}`) {
+        link.classList.add('text-accent', 'font-bold');
+        link.setAttribute('aria-current','location');
+      }
+    });
+  });
+}
+
+/* Heart burst animation */
+function triggerHeartBurst() {
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const burst = document.createElement('div');
+  burst.className = 'fixed inset-0 pointer-events-none z-50 flex items-center justify-center';
+  burst.innerHTML = `
+    <span class="material-symbols-outlined text-accent text-8xl animate-ping opacity-75">favorite</span>
+  `;
+  document.body.appendChild(burst);
+  setTimeout(() => burst.remove(), 1000);
+}
+
+/* Confetti effect */
+function triggerConfetti() {
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  for (let i = 0; i < 30; i++) {
+    const confetti = document.createElement('div');
+    confetti.className = 'fixed pointer-events-none z-50';
+    confetti.style.left = `${Math.random() * 100}vw`;
+    confetti.style.top = `-10px`;
+    confetti.style.width = `${Math.random() * 10 + 6}px`;
+    confetti.style.height = `${Math.random() * 10 + 6}px`;
+    confetti.style.backgroundColor = ['#D4AF37', '#A25768', '#F9EAE1', '#F4C2C2'][Math.floor(Math.random() * 4)];
+    confetti.style.borderRadius = '50%';
+    confetti.style.transition = `transform ${Math.random() * 2 + 1.5}s ease-out, opacity ${Math.random() * 2 + 1.5}s ease-out`;
+    confetti.style.opacity = '1';
+
+    document.body.appendChild(confetti);
+
+    setTimeout(() => {
+      confetti.style.transform = `translate(${(Math.random() - 0.5) * 200}px, ${window.innerHeight + 20}px) rotate(${Math.random() * 360}deg)`;
+      confetti.style.opacity = '0';
+    }, 50);
+
+    setTimeout(() => confetti.remove(), 3500);
+  }
+}
+
+function escapeHTML(value) { return String(value ?? '').replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function applyPersonalization(config) {
+  document.querySelectorAll('[data-couple]').forEach(el => { const v=config.couple?.[el.dataset.couple]; if(v!=null) el.textContent=v; });
+  document.querySelectorAll('[data-photo]').forEach((img,i)=> { img.src=config.couple?.[img.dataset.photo] || 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTYwIj48ZGVmcz48cmFkaWFsR3JhZGllbnQgaWQ9ImciPjxzdG9wIHN0b3AtY29sb3I9IiM3NDMyNDQiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxQTA2MDkiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0idXJsKCNnKSIvPjxyZWN0IHg9IjI0IiB5PSIyNCIgd2lkdGg9Ijc1MiIgaGVpZ2h0PSI1MTIiIHJ4PSIyNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRDRBRjM3IiBzdHJva2Utb3BhY2l0eT0iLjQ1Ii8+PGcgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRDRBRjM3IiBzdHJva2Utd2lkdGg9IjQiIG9wYWNpdHk9Ii43Ij48Y2lyY2xlIGN4PSI0MDAiIGN5PSIyNTAiIHI9IjEwNCIvPjxjaXJjbGUgY3g9IjQwMCIgY3k9IjI1MCIgcj0iMTIwIiBvcGFjaXR5PSIuMzUiLz48cGF0aCBkPSJNNDAwIDMxMCAzNDAgMjUyQzI4MSAxOTIgMzU5IDE0NSA0MDAgMjA0QzQ0MSAxNDUgNTE5IDE5MiA0NjAgMjUyWiIgZmlsbD0iI0Q0QUYzNyIgZmlsbC1vcGFjaXR5PSIuMjMiLz48L2c+PHRleHQgeD0iNDAwIiB5PSI0MzQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLHNlcmlmIiBmb250LXNpemU9IjMwIiBmaWxsPSIjRjNFNUFCIiBsZXR0ZXItc3BhY2luZz0iNCI+T1VSIExPVkUgU1RPUlk8L3RleHQ+PHRleHQgeD0iNDAwIiB5PSI0NzAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE1IiBmaWxsPSIjRjlFQUUxIj5QSE9UTyBQTEFDRUhPTERFUjwvdGV4dD48L3N2Zz4='; img.alt=config.couple?.['partnerName'+(i+1)] || 'صورة شخصية'; });
+  document.getElementById('gift-code').textContent=config.surprise?.giftCode || '';
+  document.getElementById('demo-note').hidden=!config.demoMode;
+  const heading=document.querySelector('#surprise h2'); if(config.surprise?.boxTitle) heading.textContent=config.surprise.boxTitle;
+  if(config.surprise?.teaser) document.querySelector('#surprise p').textContent=config.surprise.teaser;
+  document.title=`حكايتنا ❤️ — ${config.couple?.partnerName1 || ''} و${config.couple?.partnerName2 || ''}`;
+}
+function toggleReasonFlip(btn) {
+ const desc=btn.querySelector('.reason-description'), opened=btn.getAttribute('aria-expanded')==='true';
+ btn.setAttribute('aria-expanded',String(!opened)); desc.hidden=opened;
+ btn.querySelector('.reason-prompt').textContent=opened?'اضغطي علشان تعرفي السبب':'من كل قلبي';
+}
+function showWelcome() {
+ const welcome=document.getElementById('welcome-screen'), main=document.getElementById('main-experience');
+ main.inert=true; main.setAttribute('aria-hidden','true'); main.classList.add('opacity-0'); main.classList.remove('opacity-100');
+ welcome.inert=false; welcome.style.display=''; welcome.classList.remove('opacity-0','pointer-events-none','scale-105');
+ window.scrollTo({top:0,behavior:'instant'}); document.getElementById('enter-experience-btn').focus({preventScroll:true});
+}
+function setupAccessibility() {
+ document.querySelector('a[href="#welcome-screen"]').onclick=e=>{e.preventDefault();showWelcome();};
+ document.addEventListener('keydown',e=>{ if((e.key==='Enter'||e.key===' ') && e.target.matches('[role="button"]')){e.preventDefault();e.target.click();} });
+ document.addEventListener('error',e=>{if(e.target.tagName==='IMG' && !e.target.dataset.fallback){e.target.dataset.fallback='1';e.target.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTYwIj48ZGVmcz48cmFkaWFsR3JhZGllbnQgaWQ9ImciPjxzdG9wIHN0b3AtY29sb3I9IiM3NDMyNDQiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxQTA2MDkiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjU2MCIgZmlsbD0idXJsKCNnKSIvPjxyZWN0IHg9IjI0IiB5PSIyNCIgd2lkdGg9Ijc1MiIgaGVpZ2h0PSI1MTIiIHJ4PSIyNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRDRBRjM3IiBzdHJva2Utb3BhY2l0eT0iLjQ1Ii8+PGcgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRDRBRjM3IiBzdHJva2Utd2lkdGg9IjQiIG9wYWNpdHk9Ii43Ij48Y2lyY2xlIGN4PSI0MDAiIGN5PSIyNTAiIHI9IjEwNCIvPjxjaXJjbGUgY3g9IjQwMCIgY3k9IjI1MCIgcj0iMTIwIiBvcGFjaXR5PSIuMzUiLz48cGF0aCBkPSJNNDAwIDMxMCAzNDAgMjUyQzI4MSAxOTIgMzU5IDE0NSA0MDAgMjA0QzQ0MSAxNDUgNTE5IDE5MiA0NjAgMjUyWiIgZmlsbD0iI0Q0QUYzNyIgZmlsbC1vcGFjaXR5PSIuMjMiLz48L2c+PHRleHQgeD0iNDAwIiB5PSI0MzQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLHNlcmlmIiBmb250LXNpemU9IjMwIiBmaWxsPSIjRjNFNUFCIiBsZXR0ZXItc3BhY2luZz0iNCI+T1VSIExPVkUgU1RPUlk8L3RleHQ+PHRleHQgeD0iNDAwIiB5PSI0NzAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE1IiBmaWxsPSIjRjlFQUUxIj5QSE9UTyBQTEFDRUhPTERFUjwvdGV4dD48L3N2Zz4=';}},true);
+ let lastFocus=null, active=null;
+ const dialogs=[...document.querySelectorAll('[role="dialog"]')];
+ const observer=new MutationObserver(()=>{
+  const open=dialogs.find(d=>!d.classList.contains('hidden'));
+  if(open && open!==active){lastFocus=document.activeElement;active=open;document.body.classList.add('modal-open');open.focus();}
+  else if(!open && active){active=null;document.body.classList.remove('modal-open');lastFocus?.focus({preventScroll:true});}
+ });
+ dialogs.forEach(d=>{observer.observe(d,{attributes:true,attributeFilter:['class']});d.addEventListener('click',e=>{if(e.target===d)d.classList.add('hidden');});});
+ document.addEventListener('keydown',e=>{if(!active)return;if(e.key==='Escape'){active.classList.add('hidden');return;} if(e.key==='Tab'){const items=[...active.querySelectorAll('button:not([disabled]),a[href],input,[tabindex="0"]')];if(!items.length){e.preventDefault();return;}const first=items[0],last=items[items.length-1];if(e.shiftKey&&(document.activeElement===first||document.activeElement===active)){e.preventDefault();last.focus();}else if(!e.shiftKey&&(document.activeElement===last||document.activeElement===active)){e.preventDefault();first.focus();}}});
+}
+const iconPaths={
+ favorite:'M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z',
+ home:'M3 10 12 3l9 7v10h-6v-6H9v6H3Z', mail:'M3 5h18v14H3z M3 6l9 7 9-7', drafts:'M3 10l9-7 9 7v10H3Z M3 10l9 6 9-6', close:'M6 6l12 12M18 6 6 18', redeem:'M3 8h18v4H3z M5 12v9h14v-9 M12 8v13 M12 8C4 8 5 0 9 3l3 5c8 0 7-8 3-5z', music_note:'M10 18V5l10-2v12 M10 18a3 2.5 0 1 1-6 0 3 2.5 0 0 1 6 0 M20 15a3 2.5 0 1 1-6 0 3 2.5 0 0 1 6 0', pause:'M8 5v14M16 5v14', replay:'M4 11a8 8 0 1 1 3 7M4 11V4m0 7h7', photo_camera:'M3 7h5l2-3h4l2 3h5v13H3Z M16 13a4 4 0 1 0-8 0 4 4 0 0 0 8 0', chat_bubble:'M3 4h18v13H9l-6 4Z', auto_stories:'M3 5q5-2 9 2 4-4 9-2v14q-5-2-9 1-4-3-9-1Z M12 7v13', flight_takeoff:'M3 17l18-10M3 9l5 5 3-2-3-7 2-1 6 5 5-2M3 21h18', cottage:'M3 10l9-7 9 7v11H3Z M9 21v-7h6v7', event:'M3 5h18v16H3z M3 10h18 M8 3v4M16 3v4', all_inclusive:'M12 12c-3-5-4-6-6-6a6 6 0 1 0 0 12c2 0 3-1 6-6s4-6 6-6a6 6 0 1 1 0 12c-2 0-3-1-6-6', near_me:'M3 11l18-8-8 18-2-8Z', mood:'M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20M8 10h.1m8-.1h.1M7 14q5 6 10 0', sentiment_very_satisfied:'M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20M8 10h.1m8-.1h.1M7 14q5 6 10 0', sentiment_dissatisfied:'M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20M8 10h.1m8-.1h.1M7 17q5-6 10 0', stars:'M12 2l3 7 7 1-5 5 1 7-6-4-6 4 1-7-5-5 7-1Z', auto_awesome:'M12 2l2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5Z', celebration:'M3 21 8 6l10 10-15 5ZM14 4l3-2m2 7 3-1M16 6l4-3', palette:'M12 3a9 9 0 1 0 0 18h2a2 2 0 0 0 0-4h-1a1 1 0 0 1 0-2h4a4 4 0 0 0 4-4 9 9 0 0 0-9-8ZM6 10h.1M10 7h.1M15 7h.1'};
+function setIcon(el,name) {if(!el)return;const path=iconPaths[name]||iconPaths.favorite;el.dataset.icon=name;el.setAttribute('aria-hidden','true');el.innerHTML=`<svg viewBox="0 0 24 24" width="1em" height="1em" fill="${name==='favorite'?'currentColor':'none'}" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="${path}"/></svg>`;}
+function syncIcons(){const update=()=>document.querySelectorAll('.material-symbols-outlined:not([data-icon])').forEach(el=>setIcon(el,el.textContent.trim()));update();new MutationObserver(update).observe(document.body,{childList:true,subtree:true});}
+
+const KEY='our-love-story:personal:v1', HEART="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' rx='30' fill='%234A0E17'/%3E%3Cpath d='M100 160 36 98C-1 48 65 12 100 63c35-51 101-15 64 35Z' fill='%23A25768' stroke='%23D4AF37' stroke-width='3'/%3E%3C/svg%3E";
+const $=id=>document.getElementById(id);
+const FIELDS={
+couple:[['partnerName1','الاسم الأول','text',true],['partnerName2','الاسم الثاني','text',true],['startLocal','تاريخ ووقت بداية العلاقة (بتوقيت جهازك)','datetime-local',true],['coverPhoto1','صورة الاسم الأول','image'],['coverPhoto2','صورة الاسم الثاني','image'],['quoteMain','عنوان الترحيب','text'],['quoteSub','رسالة الترحيب','textarea'],['finalQuote','رسالة الختام','textarea']],
+memories:[['title','عنوان الذكرى','text',true],['date','تاريخ الذكرى','date'],['message','تفاصيل الذكرى','textarea'],['image','صورة الذكرى','image']],
+photos:[['url','الصورة','image',true],['caption','وصف الصورة','text']],
+reasons:[['title','سبب الحب','text',true],['description','تفاصيل السبب','textarea']],
+letters:[['category','عنوان الرسالة أو وقت فتحها','text',true],['content','الرسالة','textarea',true]],
+dreams:[['title','عنوان الحلم','text',true],['description','التفاصيل','textarea']],
+extra:[['secretMessage','رسالة المفاجأة','textarea'],['giftCode','رمز هدية (اختياري)','text'],['musicUrl','رابط ملف موسيقى HTTPS (اختياري)','url'],['musicTitle','اسم الموسيقى','text']]
+};
+const groups=['memories','photos','reasons','letters','dreams'];
+function safeMedia(v,local=true){v=String(v||'').trim();if(local&&/^data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=]+$/.test(v))return v;try{if(new URL(v).protocol==='https:')return v}catch{}return ''}
+function clean(v,n=3000){return String(v??'').trim().slice(0,n)}
+function normalize(raw){
+ if(!raw||typeof raw!=='object')return null;
+ const c=raw.couple||{}, date=new Date(c.storyStartDate||'');
+ if(!clean(c.partnerName1,100)||!clean(c.partnerName2,100)||!Number.isFinite(+date)||+date>Date.now())return null;
+ const couple={partnerName1:clean(c.partnerName1,100),partnerName2:clean(c.partnerName2,100),storyStartDate:date.toISOString(),startLocal:clean(c.startLocal,30),englishTitle:'Our Love Story',coverPhoto1:safeMedia(c.coverPhoto1),coverPhoto2:safeMedia(c.coverPhoto2),quoteMain:clean(c.quoteMain)||'حكايتنا ❤️',quoteSub:clean(c.quoteSub),finalQuote:clean(c.finalQuote)||'حكايتنا لسه مكملة'};
+ const arr=(name,fn)=>Array.isArray(raw[name])?raw[name].slice(0,30).filter(x=>x&&typeof x==='object').map(fn):[];
+ return {demoMode:false,couple,
+ memories:arr('memories',x=>({title:clean(x.title,150),date:clean(x.date,100),message:clean(x.message),image:safeMedia(x.image),icon:'favorite'})).filter(x=>x.title),
+ photos:arr('photos',x=>({url:safeMedia(x.url),caption:clean(x.caption,300)})).filter(x=>x.url),
+ reasons:arr('reasons',x=>({title:clean(x.title,150),description:clean(x.description)})).filter(x=>x.title),
+ letters:arr('letters',x=>({category:clean(x.category,150),content:clean(x.content),icon:'mail',badge:''})).filter(x=>x.category&&x.content),
+ dreams:arr('dreams',x=>({title:clean(x.title,150),description:clean(x.description),icon:'stars',status:''})).filter(x=>x.title),
+ surprise:{secretMessage:clean(raw.surprise?.secretMessage),giftCode:clean(raw.surprise?.giftCode,150)},
+ music:{src:safeMedia(raw.music?.src,false),title:clean(raw.music?.title,150)}};
+}
+function encodeStory(x){let b=new TextEncoder().encode(JSON.stringify(x));let s='';for(const v of b)s+=String.fromCharCode(v);return btoa(s).replaceAll('+','-').replaceAll('/','_').replace(/=+$/,'')}
+function decodeStory(s){if(s.length>100000)throw Error('الرابط كبير جدًا');return JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(s.replaceAll('-','+').replaceAll('_','/')),x=>x.charCodeAt(0))))}
+function loadDraft(){try{return normalize(JSON.parse(localStorage.getItem(KEY)))}catch{return null}}
+function saveDraft(c){try{localStorage.setItem(KEY,JSON.stringify(c));return true}catch{return false}}
+function status(s){$('setup-status').textContent=s}
+function field(spec,value=''){
+ const [key,label,type,required]=spec, wrap=document.createElement('label');wrap.className='setup-field';wrap.append(document.createTextNode(label+(required?' *':'')));
+ const input=document.createElement(type==='textarea'?'textarea':'input');
+ input.dataset.field=key;input.name=key;if(type!=='textarea')input.type=type==='image'?'url':type;
+ input.value=type==='image'&&String(value).startsWith('data:')?'':value||'';
+ if(type!=='image')input.required=!!required;
+ if(type==='datetime-local'){const d=new Date(Date.now()-new Date().getTimezoneOffset()*60000);input.max=d.toISOString().slice(0,16)}
+ if(type==='text'||type==='textarea')input.maxLength=type==='textarea'?3000:150;
+ wrap.append(input);
+ if(type==='image'){
+   input.placeholder='https://… (اختياري)';input.dataset.local=String(value).startsWith('data:')?value:'';
+   input.dataset.image='1';input.dataset.required=required?'1':'0';
+   const upload=document.createElement('input'), state=document.createElement('small'), clear=document.createElement('button');
+   upload.type='file';upload.accept='image/jpeg,image/png,image/webp';clear.type='button';clear.textContent='إزالة الصورة';clear.className='remove-row';state.textContent=input.dataset.local?'تم حفظ صورة من جهازك':'أو اختر صورة من جهازك';
+   upload.onchange=async()=>{const f=upload.files[0];if(!f)return;try{if(f.size>15000000)throw Error('الصورة أكبر من 15 MB');const bmp=await createImageBitmap(f);const ratio=Math.min(1,800/Math.max(bmp.width,bmp.height));const cv=document.createElement('canvas');cv.width=Math.max(1,Math.round(bmp.width*ratio));cv.height=Math.max(1,Math.round(bmp.height*ratio));cv.getContext('2d').drawImage(bmp,0,0,cv.width,cv.height);bmp.close();input.dataset.local=cv.toDataURL('image/jpeg',.72);input.value='';state.textContent='تم اختيار الصورة: '+f.name}catch(e){state.textContent='تعذر قراءة الصورة: '+e.message}};
+   input.oninput=()=>{if(input.value){input.dataset.local='';upload.value='';state.textContent='سيتم استخدام رابط الصورة'}};
+   clear.onclick=()=>{input.value='';input.dataset.local='';upload.value='';state.textContent='لم يتم اختيار صورة'};
+   wrap.append(upload,state,clear);
+ }return wrap;
+}
+function addRow(group,data={}){
+ const target=$(group+'-fields');if(target.children.length>=30)return;
+ const row=document.createElement('div');row.className='setup-row';const grid=document.createElement('div');grid.className='setup-grid';
+ for(const spec of FIELDS[group])grid.append(field(spec,data[spec[0]]));
+ const del=document.createElement('button');del.type='button';del.className='remove-row';del.textContent='حذف العنصر';del.onclick=()=>row.remove();row.append(grid,del);target.append(row);
+}
+function readFields(root){
+ const values={};for(const i of root.querySelectorAll('[data-field]')){
+  const v=i.dataset.image?safeMedia(i.value||i.dataset.local):i.value.trim();
+  if(i.dataset.image&&(i.value||i.dataset.local)&&!v)throw Error('استخدم رابط صورة HTTPS صالحًا.');
+  if(i.dataset.required==='1'&&!v)throw Error('اختر صورة للألبوم أو احذف العنصر.');
+  values[i.dataset.field]=v;
+ }return values;
+}
+function collect(){
+ if(!$('story-form').reportValidity())throw Error('أكمل البيانات المطلوبة أولًا.');
+ const c=readFields($('couple-fields')), extra=readFields($('extra-fields'));
+ if(!c.startLocal||!Number.isFinite(+new Date(c.startLocal))||+new Date(c.startLocal)>Date.now())throw Error('اختر تاريخ بداية صحيحًا لا يتجاوز الوقت الحالي.');
+ c.storyStartDate=new Date(c.startLocal).toISOString();
+ const raw={couple:c,surprise:{secretMessage:extra.secretMessage,giftCode:extra.giftCode},music:{src:extra.musicUrl,title:extra.musicTitle}};
+ if(extra.musicUrl&&!safeMedia(extra.musicUrl,false))throw Error('رابط الموسيقى يجب أن يبدأ بـ HTTPS.');
+ for(const g of groups)raw[g]=Array.from($(g+'-fields').children,row=>readFields(row));
+ const result=normalize(raw);if(!result)throw Error('البيانات الأساسية غير مكتملة.');
+ return result;
+}
+function baseURL(){const u=new URL(location.href);u.hash='';u.search='';return u}
+function setupEditor(draft,err){
+ $('setup-page').hidden=false;$('welcome-screen').hidden=true;$('main-experience').hidden=true;
+ const c=draft?.couple||{};for(const spec of FIELDS.couple)$('couple-fields').append(field(spec,c[spec[0]]));
+ const e={secretMessage:draft?.surprise?.secretMessage,giftCode:draft?.surprise?.giftCode,musicUrl:draft?.music?.src,musicTitle:draft?.music?.title};
+ for(const spec of FIELDS.extra)$('extra-fields').append(field(spec,e[spec[0]]));
+ for(const g of groups)for(const item of draft?.[g]||[])addRow(g,item);
+ document.querySelectorAll('[data-add]').forEach(b=>b.onclick=()=>addRow(b.dataset.add));
+ $('story-form').onsubmit=ev=>{ev.preventDefault();try{const d=collect();if(!saveDraft(d))throw Error('تعذر حفظ المسودة في المتصفح. يمكنك تنزيل النسخة الشخصية بدلًا من ذلك.');location.href=baseURL().href}catch(e){status(e.message)}};
+ $('share-story').onclick=()=>{try{const d=collect();const saved=saveDraft(d);if(JSON.stringify(d).includes('data:image/'))throw Error('الصور المرفوعة من الجهاز تحتاج نسخة HTML شخصية. استخدم روابط HTTPS بدلًا منها لإنشاء رابط مشاركة.');if(location.protocol==='file:')throw Error('افتح الموقع المنشور على GitHub Pages لإنشاء رابط يعمل عند الآخرين.');const u=baseURL();u.hash='story='+encodeStory(d);if(u.href.length>12000)throw Error('الرابط أطول من الحد الموصى به. استخدم النسخة الشخصية أو قلّل النصوص.');$('share-url').value=u.href;$('share-result').hidden=false;status((saved?'تم حفظ المسودة. ':'')+'الرابط جاهز للنسخ. أي تغيير لاحق يحتاج رابطًا جديدًا.')}catch(e){$('share-result').hidden=true;status(e.message)}};
+ $('copy-share').onclick=async()=>{try{await navigator.clipboard.writeText($('share-url').value);status('تم نسخ الرابط.')}catch{$('share-url').select();status('انسخ الرابط المحدد يدويًا.')}};
+ $('export-story').onclick=async()=>{try{const d=collect();saveDraft(d);const r=await fetch(baseURL().href);if(!r.ok)throw Error('تعذر تحميل قالب الموقع.');const source=await r.text();const json=JSON.stringify(d).replaceAll('<','\\u003c');const marker=/<script type="application\/json" id="embedded-story">[\s\S]*?<\/script>/;if(!marker.test(source))throw Error('قالب التصدير غير متاح.');const html=source.replace(marker,'<script type="application/json" id="embedded-story">'+json+'<'+'/script>');const url=URL.createObjectURL(new Blob([html],{type:'text/html;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='our-love-story.html';a.click();setTimeout(()=>URL.revokeObjectURL(url),30000);status('تم تجهيز النسخة الشخصية. يمكن فتحها دون موقع، وإرسالها كملف HTML.')}catch(e){status('تعذر التصدير: '+e.message)}};
+ $('reset-story').onclick=()=>{if(confirm('هل تريد حذف مسودتك من هذا المتصفح؟')){try{localStorage.removeItem(KEY)}catch{}location.href=baseURL().href}};
+ if(err)status(err);
+}
+function finishStory(c){
+ const hiddenGroups={memories:!c.memories.length,album:!c.photos.length,reasons:!c.reasons.length,letters:!c.letters.length,dreams:!c.dreams.length,surprise:!c.surprise.secretMessage&&!c.surprise.giftCode};
+ for(const [id,hide] of Object.entries(hiddenGroups)){if(hide){$(id).hidden=true;document.querySelectorAll('a[href="#'+id+'"]').forEach(a=>a.hidden=true)}}
+ if(!c.surprise.giftCode)$('gift-code').parentElement.hidden=true;
+ document.querySelectorAll('[data-photo]').forEach(img=>{if(!c.couple[img.dataset.photo])img.src=HEART;img.alt='صورة شخصية'});
+ document.querySelectorAll('#memories-timeline-container img').forEach((img,i)=>{if(!c.memories[i]?.image)img.src=HEART});
+ for(const a of document.querySelectorAll('a[href^="#"]')){if(a.getAttribute('href')==='#welcome-screen')continue;a.addEventListener('click',ev=>{const section=document.getElementById(a.getAttribute('href').slice(1));if(section){ev.preventDefault();section.scrollIntoView({behavior:'smooth'})}})}
+ if(window.storyEditable){for(const parent of [$('welcome-screen'),document.querySelector('#main-experience header>div:last-child')]){const a=document.createElement('a');a.className='story-edit';const u=baseURL();u.search='?edit=1';a.href=u.href;a.textContent='تعديل البيانات';parent.append(a)}}
+}
+function bootStory(){
+ const edit=new URLSearchParams(location.search).has('edit'), shared=location.hash.startsWith('#story=');
+ let c=null, err='';
+ try{if(shared)c=normalize(decodeStory(location.hash.slice(7)));else if(!edit)c=normalize(JSON.parse($('embedded-story').textContent))||loadDraft();if(shared&&!c)throw Error('رابط الحكاية غير صحيح أو غير مكتمل.')}catch(e){err=e.message;c=null}
+ if(!c||edit){setupEditor(loadDraft(),err);return}
+ window.storyEditable=!shared&&$('embedded-story').textContent.trim()==='null';
+ window.LoveStoryConfig=c;$('setup-page').hidden=true;$('welcome-screen').hidden=false;$('main-experience').hidden=false;initLoveStory();
+}
+
+</script></body></html>
