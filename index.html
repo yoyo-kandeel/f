@@ -2193,18 +2193,25 @@ body {
 #setup-page [hidden],#welcome-screen[hidden],#main-experience[hidden]{display:none!important}
 .story-edit{font-size:13px;margin:8px}.photo-state{font-size:12px;color:#F3E5AB}
 @media(max-width:500px){.setup-panel{padding:15px}.setup-actions>*{flex:1 1 140px}}
+</style><style>
+[hidden]{display:none!important}
+.private-lock{min-height:100dvh;display:grid;place-items:center;padding:24px;position:relative;z-index:70;background:radial-gradient(ellipse at top,#4A0E17,#1A0609 75%)}
+.private-card{width:min(100%,420px);padding:32px 25px;border:1px solid #D4AF3766;border-radius:28px;background:#25090de6;text-align:center;box-shadow:0 24px 70px #0007}
+.private-card h1{font-size:27px;font-weight:800;color:#F9EAE1;margin:8px 0}.private-card p{line-height:1.8}.private-heart{font-size:64px;line-height:1.2;color:#D4AF37;text-shadow:0 0 28px #D4AF3755}
+.private-card form{display:grid;gap:15px;margin-top:24px;text-align:right}.private-card form button{margin-top:4px;width:100%}.private-card #lock-create{display:grid;gap:12px}.private-note{color:#F3E5AB;font-size:12px;line-height:1.85;display:block;margin-top:12px}.private-card input{width:100%}.lock-exit{position:fixed;z-index:45;left:14px;top:14px;padding:8px 14px;border:1px solid #D4AF3777;background:#1A0609;color:#F3E5AB;border-radius:99px;font-size:12px}.private-admin-info{font-size:13px;color:#F3E5AB;margin:12px 0}
 </style></head>
 <body class="bg-burgundy-deep text-blush min-h-screen relative selection:bg-dusty-rose selection:text-blush font-body">
-<section id="setup-page" aria-label="إعداد حكايتنا">
+<section id="private-lock" class="private-lock"><div class="private-card"><div class="font-script text-gold-light" style="font-size:32px">Our Love Story</div><div class="private-heart" aria-hidden="true">♡</div><h1 id="lock-title">حكايتنا الخاصة</h1><p id="lock-description">حكاية مش لأي حد…</p><form id="lock-form" hidden><label class="setup-field" id="lock-label">كلمة المرور<input id="lock-password" type="password" required autocomplete="current-password"></label><div id="lock-create" hidden><label class="setup-field">تأكيد كلمة مرور الإدارة<input id="lock-confirm" type="password" autocomplete="new-password"></label><label class="setup-field">كلمة مرور المشاهدة<input id="lock-view-password" type="password" autocomplete="new-password"></label><label class="setup-field">تأكيد كلمة مرور المشاهدة<input id="lock-view-confirm" type="password" autocomplete="new-password"></label><p class="private-note">استخدم كلمتي مرور مختلفتين وقويتين (١٢ حرفًا على الأقل). احتفظ بهما؛ لا توجد إمكانية لاستردادهما.</p></div><button class="setup-action setup-primary" id="lock-submit" type="submit">فتح الحكاية</button></form><p id="lock-status" class="setup-status" role="status" aria-live="polite">جاري التحقق من البيانات المشفّرة…</p><a id="lock-back" class="private-note" href="./" hidden>العودة إلى صفحة المشاهدة</a></div></section><noscript><p style="text-align:center;padding:30px">يلزم تفعيل JavaScript لفك تشفير الحكاية في متصفحك.</p></noscript>
+<section id="setup-page" aria-label="إعداد حكايتنا" hidden>
 <div class="hero-copy"><div class="font-script text-gold-light" style="font-size:30px">Our Love Story</div><div style="font-size:44px;color:#D4AF37">♡</div><h1>ابدأ حكايتكم</h1><p>اكتب بياناتكم الحقيقية بنفسك. كل الذكريات والرسائل والصور اختيارية، ولن تظهر أي بيانات لم تضفها.</p></div>
 <form id="story-form">
 <div class="setup-panel"><h2>١. البيانات الأساسية</h2><div id="couple-fields" class="setup-grid"></div></div>
 <div class="setup-panel"><h2>٢. الذكريات والصور</h2><div id="memories-fields"></div><button class="setup-action" type="button" data-add="memories">+ إضافة ذكرى</button><div id="photos-fields"></div><button class="setup-action" type="button" data-add="photos">+ إضافة صورة للألبوم</button></div>
 <div class="setup-panel"><h2>٣. أسباب الحب والرسائل</h2><div id="reasons-fields"></div><button class="setup-action" type="button" data-add="reasons">+ إضافة سبب</button><div id="letters-fields"></div><button class="setup-action" type="button" data-add="letters">+ إضافة رسالة</button></div>
 <div class="setup-panel"><h2>٤. أحلامنا والمفاجأة</h2><div id="dreams-fields"></div><button class="setup-action" type="button" data-add="dreams">+ إضافة حلم</button><div id="extra-fields" class="setup-grid" style="margin-top:18px"></div></div>
-<div class="setup-panel"><h2>٥. حفظ ومشاركة</h2><p style="font-size:13px">المسودة تُحفظ في متصفحك فقط. رابط المشاركة يحمل البيانات التي تدخلها، ولا يحتاج قاعدة بيانات. الأشخاص الذين يحصلون على الرابط يستطيعون قراءة محتواه. للصور المرفوعة من جهازك، استخدم الملف الشخصي القابل للمشاركة، أو أدخل روابط HTTPS للصور لإنشاء رابط قصير نسبيًا.</p><div class="setup-actions"><button class="setup-action setup-primary" type="submit">حفظ ومعاينة الحكاية</button><button class="setup-action" id="share-story" type="button">إنشاء رابط مشاركة</button><button class="setup-action" id="export-story" type="button">تنزيل نسخة شخصية HTML</button><button class="setup-action" id="reset-story" type="button">مسح المسودة</button></div><p class="setup-status" id="setup-status" role="status"></p><div id="share-result" hidden><label class="setup-field">رابط المشاركة<input id="share-url" class="share-output" readonly dir="ltr"></label><button type="button" class="setup-action" id="copy-share">نسخ الرابط</button></div></div>
+<div class="setup-panel"><h2>٥. الأمان والنشر</h2><p class="private-admin-info">المحتوى والصور يُشفّران قبل التخزين أو النشر. احفظ نسخة story.json المشفّرة وارفعها إلى المستودع في GitHub لاستبدال النسخة المنشورة. المعاينة المحلية لا تغيّر ما يراه الزوار.</p><div class="setup-grid"><label class="setup-field">كلمة مرور المشاهدة (أعد إدخالها للتحويل إلى كلمة جديدة عند الرغبة)<input id="new-view-password" type="password" autocomplete="new-password" placeholder="اتركها فارغة للإبقاء عليها"></label><label class="setup-field">تأكيد كلمة مرور المشاهدة الجديدة<input id="new-view-confirm" type="password" autocomplete="new-password"></label><label class="setup-field">كلمة مرور الإدارة الجديدة (اختياري)<input id="new-admin-password" type="password" autocomplete="new-password"></label><label class="setup-field">تأكيد كلمة مرور الإدارة الجديدة<input id="new-admin-confirm" type="password" autocomplete="new-password"></label></div><div class="setup-actions"><button class="setup-action setup-primary" type="submit">حفظ مشفّر ومعاينة</button><button class="setup-action" id="export-story" type="button">تنزيل story.json المشفّر للنشر</button><a class="setup-action" href="https://github.com/yoyo-kandeel/f/upload/main" target="_blank" rel="noopener noreferrer">رفع الملف على GitHub</a><button class="setup-action" id="copy-share" type="button">نسخ رابط المشاهدة</button><button class="setup-action" id="reset-story" type="button">حذف المسودة المحلية فقط</button><button class="setup-action" id="admin-exit" type="button">قفل الإدارة</button></div><p class="setup-status" id="setup-status" role="status" aria-live="polite"></p><p class="private-note">لا ترفع صورًا أو بيانات غير مشفّرة. الروابط الخارجية للموسيقى ليست ملفات محمية. تغيير كلمة المرور يسري على النسخة الجديدة فقط، ولا يلغي النسخ القديمة التي احتفظ بها أحد.</p></div>
 </form></section>
-<script type="application/json" id="embedded-story">null</script>
+
 <!-- Subtle Ambient Particles Container -->
 <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden" id="particles-canvas-container"></div>
 <!-- Ambient Golden & Rose Glows -->
@@ -3104,7 +3111,7 @@ const iconPaths={
 function setIcon(el,name) {if(!el)return;const path=iconPaths[name]||iconPaths.favorite;el.dataset.icon=name;el.setAttribute('aria-hidden','true');el.innerHTML=`<svg viewBox="0 0 24 24" width="1em" height="1em" fill="${name==='favorite'?'currentColor':'none'}" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="${path}"/></svg>`;}
 function syncIcons(){const update=()=>document.querySelectorAll('.material-symbols-outlined:not([data-icon])').forEach(el=>setIcon(el,el.textContent.trim()));update();new MutationObserver(update).observe(document.body,{childList:true,subtree:true});}
 
-const KEY='our-love-story:personal:v1', HEART="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' rx='30' fill='%234A0E17'/%3E%3Cpath d='M100 160 36 98C-1 48 65 12 100 63c35-51 101-15 64 35Z' fill='%23A25768' stroke='%23D4AF37' stroke-width='3'/%3E%3C/svg%3E";
+const KEY='our-love-story:private:v2', LEGACY_KEY='our-love-story:personal:v1', HEART="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' rx='30' fill='%234A0E17'/%3E%3Cpath d='M100 160 36 98C-1 48 65 12 100 63c35-51 101-15 64 35Z' fill='%23A25768' stroke='%23D4AF37' stroke-width='3'/%3E%3C/svg%3E";
 const $=id=>document.getElementById(id);
 const FIELDS={
 couple:[['partnerName1','الاسم الأول','text',true],['partnerName2','الاسم الثاني','text',true],['startDate','تاريخ بداية العلاقة','date',true],['startTime','وقت البداية (اختياري؛ بتوقيت جهازك)','time'],['coverPhoto1','صورة الاسم الأول','image'],['coverPhoto2','صورة الاسم الثاني','image'],['quoteMain','عنوان الترحيب','text'],['quoteSub','رسالة الترحيب','textarea'],['finalQuote','رسالة الختام','textarea']],
@@ -3133,10 +3140,6 @@ function normalize(raw){
  surprise:{secretMessage:clean(raw.surprise?.secretMessage),giftCode:clean(raw.surprise?.giftCode,150)},
  music:{src:safeMedia(raw.music?.src,false),title:clean(raw.music?.title,150)}};
 }
-function encodeStory(x){let b=new TextEncoder().encode(JSON.stringify(x));let s='';for(const v of b)s+=String.fromCharCode(v);return btoa(s).replaceAll('+','-').replaceAll('/','_').replace(/=+$/,'')}
-function decodeStory(s){if(s.length>100000)throw Error('الرابط كبير جدًا');return JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(s.replaceAll('-','+').replaceAll('_','/')),x=>x.charCodeAt(0))))}
-function loadDraft(){try{return normalize(JSON.parse(localStorage.getItem(KEY)))}catch{return null}}
-function saveDraft(c){try{localStorage.setItem(KEY,JSON.stringify(c));return true}catch{return false}}
 function status(s){$('setup-status').textContent=s}
 function field(spec,value=''){
  const [key,label,type,required]=spec, wrap=document.createElement('label');wrap.className='setup-field';wrap.append(document.createTextNode(label+(required?' *':'')));
@@ -3148,10 +3151,10 @@ function field(spec,value=''){
  if(type==='text'||type==='textarea')input.maxLength=type==='textarea'?3000:150;
  wrap.append(input);
  if(type==='image'){
-   input.placeholder='https://… (اختياري)';input.dataset.local=String(value).startsWith('data:')?value:'';
+   input.type='hidden';input.value='';input.dataset.local=String(value).startsWith('data:')?value:'';
    input.dataset.image='1';input.dataset.required=required?'1':'0';
    const upload=document.createElement('input'), state=document.createElement('small'), clear=document.createElement('button');
-   upload.type='file';upload.accept='image/jpeg,image/png,image/webp';clear.type='button';clear.textContent='إزالة الصورة';clear.className='remove-row';state.textContent=input.dataset.local?'تم حفظ صورة من جهازك':'أو اختر صورة من جهازك';
+   upload.type='file';upload.accept='image/jpeg,image/png,image/webp';clear.type='button';clear.textContent='إزالة الصورة';clear.className='remove-row';state.textContent=input.dataset.local?'تم حفظ صورة من جهازك':'اختر صورة من جهازك لتشفيرها ضمن الحكاية';
    upload.onchange=async()=>{const f=upload.files[0];if(!f)return;try{if(f.size>15000000)throw Error('الصورة أكبر من 15 MB');const bmp=await createImageBitmap(f);const ratio=Math.min(1,800/Math.max(bmp.width,bmp.height));const cv=document.createElement('canvas');cv.width=Math.max(1,Math.round(bmp.width*ratio));cv.height=Math.max(1,Math.round(bmp.height*ratio));cv.getContext('2d').drawImage(bmp,0,0,cv.width,cv.height);bmp.close();input.dataset.local=cv.toDataURL('image/jpeg',.72);input.value='';state.textContent='تم اختيار الصورة: '+f.name}catch(e){state.textContent='تعذر قراءة الصورة: '+e.message}};
    input.oninput=()=>{if(input.value){input.dataset.local='';upload.value='';state.textContent='سيتم استخدام رابط الصورة'}};
    clear.onclick=()=>{input.value='';input.dataset.local='';upload.value='';state.textContent='لم يتم اختيار صورة'};
@@ -3166,8 +3169,8 @@ function addRow(group,data={}){
 }
 function readFields(root){
  const values={};for(const i of root.querySelectorAll('[data-field]')){
-  const v=i.dataset.image?safeMedia(i.value||i.dataset.local):i.value.trim();
-  if(i.dataset.image&&(i.value||i.dataset.local)&&!v)throw Error('استخدم رابط صورة HTTPS صالحًا.');
+  const v=i.dataset.image?(/^data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=]+$/.test(i.dataset.local||'')?i.dataset.local:''):i.value.trim();
+  if(i.dataset.image&&(i.value||i.dataset.local)&&!v)throw Error('اختر صورة JPEG أو PNG أو WebP من جهازك.');
   if(i.dataset.required==='1'&&!v)throw Error('اختر صورة للألبوم أو احذف العنصر.');
   values[i.dataset.field]=v;
  }return values;
@@ -3185,19 +3188,44 @@ function collect(){
  return result;
 }
 function baseURL(){const u=new URL(location.href);u.hash='';u.search='';return u}
+let adminPassword=null, viewerPassword=null, adminPending=false, localVault=null, publishedVault=null, remoteMissing=false;
+const ITERATIONS=600000, MAX_VAULT=40*1024*1024;
+function checkCrypto(){if(!globalThis.isSecureContext||!globalThis.crypto?.subtle)throw Error('افتح الموقع عبر HTTPS ومتصفح حديث لتفعيل الحماية.')}
+function bytes64(bytes){let str='';for(let i=0;i<bytes.length;i+=8192)str+=String.fromCharCode(...bytes.subarray(i,i+8192));return btoa(str)}
+function from64(value){if(typeof value!=='string'||value.length>MAX_VAULT||!/^[A-Za-z0-9+/]+={0,2}$/.test(value))throw Error('ملف مشفّر غير صالح');return Uint8Array.from(atob(value),c=>c.charCodeAt(0))}
+function validEnvelope(e){return !!e&&e.v===1&&e.alg==='AES-GCM'&&e.kdf==='PBKDF2-SHA256'&&e.iter===ITERATIONS&&typeof e.salt==='string'&&e.salt.length===24&&typeof e.iv==='string'&&e.iv.length===16&&typeof e.ct==='string'&&e.ct.length>24&&e.ct.length<MAX_VAULT}
+function validVault(v){return !!v&&v.version===2&&validEnvelope(v.viewer)&&validEnvelope(v.admin)}
+function passStrong(p){return typeof p==='string'&&p.length>=12&&p.length<=200}
+async function derive(p,salt){checkCrypto();const material=await crypto.subtle.importKey('raw',new TextEncoder().encode(p),'PBKDF2',false,['deriveKey']);return crypto.subtle.deriveKey({name:'PBKDF2',salt,iterations:ITERATIONS,hash:'SHA-256'},material,{name:'AES-GCM',length:256},false,['encrypt','decrypt'])}
+async function seal(data,password,role){if(!passStrong(password))throw Error('كلمة المرور يجب أن تكون من ١٢ إلى ٢٠٠ حرفًا.');const salt=crypto.getRandomValues(new Uint8Array(16)),iv=crypto.getRandomValues(new Uint8Array(12));const key=await derive(password,salt);const ct=await crypto.subtle.encrypt({name:'AES-GCM',iv,additionalData:new TextEncoder().encode('our-love-story:v2:'+role)},key,new TextEncoder().encode(JSON.stringify(data)));return {v:1,alg:'AES-GCM',kdf:'PBKDF2-SHA256',iter:ITERATIONS,salt:bytes64(salt),iv:bytes64(iv),ct:bytes64(new Uint8Array(ct))}}
+async function unseal(e,password,role){if(!validEnvelope(e)||!passStrong(password))throw Error('كلمة المرور غير صحيحة أو الملف غير صالح.');try{const salt=from64(e.salt),iv=from64(e.iv);if(salt.length!==16||iv.length!==12)throw Error('invalid');const key=await derive(password,salt);const raw=await crypto.subtle.decrypt({name:'AES-GCM',iv,additionalData:new TextEncoder().encode('our-love-story:v2:'+role)},key,from64(e.ct));return JSON.parse(new TextDecoder().decode(raw))}catch{throw Error('كلمة المرور غير صحيحة أو الملف المشفّر تالف.')}}
+async function makeVault(story,a,v){if(!passStrong(a)||!passStrong(v)||a===v)throw Error('اختر كلمتي مرور مختلفتين، كل واحدة من ١٢ حرفًا على الأقل.');const [viewer,admin]=await Promise.all([seal(story,v,'viewer'),seal({story,viewerPassword:v},a,'admin')]);const vault={version:2,viewer,admin};if(JSON.stringify(vault).length>MAX_VAULT)throw Error('حجم الملف المشفّر كبير جدًا. قلّل عدد الصور أو أحجامها.');return vault}
+function readLocal(){try{const v=JSON.parse(localStorage.getItem(KEY));return validVault(v)?v:null}catch{return null}}
+function writeLocal(v){try{localStorage.setItem(KEY,JSON.stringify(v));return true}catch{return false}}
+async function fetchVault(){const r=await fetch(new URL('story.json',baseURL()),{cache:'no-store',credentials:'same-origin'});if(r.status===404){remoteMissing=true;return null}if(!r.ok)throw Error('تعذر تحميل الملف المشفّر. حاول مرة أخرى.');const t=await r.text();if(t.length>MAX_VAULT)throw Error('ملف الحكاية أكبر من الحد المدعوم.');const v=JSON.parse(t);if(!validVault(v))throw Error('ملف الحكاية المنشور غير صالح.');return v}
+function lockStatus(t){$('lock-status').textContent=t}
+function hideLock(){$('private-lock').hidden=true;$('lock-form').reset()}
+function unlockView(c,preview=false){const story=normalize(c);if(!story)throw Error('بيانات الحكاية غير صالحة.');hideLock();window.storyEditable=false;window.LoveStoryConfig=story;$('setup-page').hidden=true;$('welcome-screen').hidden=false;$('main-experience').hidden=false;initLoveStory();const exit=document.createElement('button');exit.className='lock-exit';exit.type='button';exit.textContent='قفل الحكاية';exit.onclick=()=>location.reload();document.body.append(exit);window.addEventListener('pageshow',e=>{if(e.persisted)location.reload()});if(preview){const p=document.createElement('p');p.className='private-note';p.textContent='معاينة المسودة المحلية — لم تُنشر بعد';$('welcome-screen').append(p)}}
 function setupEditor(draft,err){
- $('setup-page').hidden=false;$('welcome-screen').hidden=true;$('main-experience').hidden=true;
+ hideLock();$('setup-page').hidden=false;$('welcome-screen').hidden=true;$('main-experience').hidden=true;
  const c={...(draft?.couple||{})};c.startDate=c.startLocal?.slice(0,10)||'';c.startTime=c.startLocal?.slice(11,16)||'';for(const spec of FIELDS.couple)$('couple-fields').append(field(spec,c[spec[0]]));
  const e={secretMessage:draft?.surprise?.secretMessage,giftCode:draft?.surprise?.giftCode,musicUrl:draft?.music?.src,musicTitle:draft?.music?.title};
  for(const spec of FIELDS.extra)$('extra-fields').append(field(spec,e[spec[0]]));
  for(const g of groups)for(const item of draft?.[g]||[])addRow(g,item);
  document.querySelectorAll('[data-add]').forEach(b=>b.onclick=()=>addRow(b.dataset.add));
- $('story-form').onsubmit=ev=>{ev.preventDefault();try{const d=collect();if(!saveDraft(d))throw Error('تعذر حفظ المسودة في المتصفح. يمكنك تنزيل النسخة الشخصية بدلًا من ذلك.');location.href=baseURL().href}catch(e){status(e.message)}};
- $('share-story').onclick=()=>{try{const d=collect();const saved=saveDraft(d);if(JSON.stringify(d).includes('data:image/'))throw Error('الصور المرفوعة من الجهاز تحتاج نسخة HTML شخصية. استخدم روابط HTTPS بدلًا منها لإنشاء رابط مشاركة.');if(location.protocol==='file:')throw Error('افتح الموقع المنشور على GitHub Pages لإنشاء رابط يعمل عند الآخرين.');const u=baseURL();u.hash='story='+encodeStory(d);if(u.href.length>12000)throw Error('الرابط أطول من الحد الموصى به. استخدم النسخة الشخصية أو قلّل النصوص.');$('share-url').value=u.href;$('share-result').hidden=false;status((saved?'تم حفظ المسودة. ':'')+'الرابط جاهز للنسخ. أي تغيير لاحق يحتاج رابطًا جديدًا.')}catch(e){$('share-result').hidden=true;status(e.message)}};
- $('story-form').addEventListener('input',e=>{if(e.target.id!=='share-url')$('share-result').hidden=true});
- $('copy-share').onclick=async()=>{try{await navigator.clipboard.writeText($('share-url').value);status('تم نسخ الرابط.')}catch{$('share-url').select();status('انسخ الرابط المحدد يدويًا.')}};
- $('export-story').onclick=async()=>{try{const d=collect();saveDraft(d);const r=await fetch(baseURL().href);if(!r.ok)throw Error('تعذر تحميل قالب الموقع.');const source=await r.text();const json=JSON.stringify(d).replaceAll('<','\\u003c');const marker=/<script type="application\/json" id="embedded-story">[\s\S]*?<\/script>/;if(!marker.test(source))throw Error('قالب التصدير غير متاح.');const html=source.replace(marker,()=>'<script type="application/json" id="embedded-story">'+json+'<'+'/script>');const url=URL.createObjectURL(new Blob([html],{type:'text/html;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='our-love-story.html';a.click();setTimeout(()=>URL.revokeObjectURL(url),30000);status('تم تجهيز النسخة الشخصية. يمكن فتحها دون موقع، وإرسالها كملف HTML.')}catch(e){status('تعذر التصدير: '+e.message)}};
- $('reset-story').onclick=()=>{if(confirm('هل تريد حذف مسودتك من هذا المتصفح؟')){try{localStorage.removeItem(KEY)}catch{}location.href=baseURL().href}};
+ async function save(enforceLocal=true){const d=collect();let a=adminPassword,v=viewerPassword;const ap=$('new-admin-password').value,ac=$('new-admin-confirm').value,vp=$('new-view-password').value,vc=$('new-view-confirm').value;
+ if(ap||ac){if(!passStrong(ap)||ap!==ac)throw Error('تأكد من كلمة مرور الإدارة الجديدة وتأكيدها (١٢ حرفًا على الأقل).');a=ap}
+ if(vp||vc){if(!passStrong(vp)||vp!==vc)throw Error('تأكد من كلمة مرور المشاهدة الجديدة وتأكيدها (١٢ حرفًا على الأقل).');v=vp}
+ const vault=await makeVault(d,a,v);const saved=writeLocal(vault);if(enforceLocal&&!saved)throw Error('تعذر حفظ المسودة في المتصفح. نزّل story.json مباشرة بدلًا من المعاينة.');
+ if(saved){try{localStorage.removeItem(LEGACY_KEY)}catch{}}
+ adminPassword=a;viewerPassword=v;localVault=vault;for(const id of ['new-admin-password','new-admin-confirm','new-view-password','new-view-confirm'])$(id).value='';return {vault,saved}}
+ function busy(on){$('story-form').querySelectorAll('button,input,textarea').forEach(el=>{if(on){if(!el.disabled){el.dataset.busy='1';el.disabled=true}}else if(el.dataset.busy){el.disabled=false;delete el.dataset.busy}})}
+ $('story-form').onsubmit=async ev=>{ev.preventDefault();if(adminPending)return;adminPending=true;try{status('جاري التشفير والحفظ…');const out=await save();const u=baseURL();u.search='?preview=1';location.href=u.href}catch(e){status(e.message)}finally{adminPending=false}};
+ $('export-story').onclick=async()=>{if(adminPending)return;adminPending=true;try{status('جاري تجهيز ملف النشر المشفّر…');const {vault,saved}=await save(false);const blob=new Blob([JSON.stringify(vault)],{type:'application/json'});const u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download='story.json';a.click();setTimeout(()=>URL.revokeObjectURL(u),30000);status('تم تنزيل story.json المشفّر. ارفعه إلى جذر المشروع واستبدل الملف القديم، ثم انتظر اكتمال نشر GitHub Pages.'+(saved?'':' لم تُحفظ نسخة محلية بسبب مساحة المتصفح.'))}catch(e){status(e.message)}finally{adminPending=false}};
+ $('copy-share').onclick=async()=>{try{await navigator.clipboard.writeText(baseURL().href);status('تم نسخ رابط المشاهدة. أرسل كلمة مرور المشاهدة بشكل منفصل.')}catch{status('رابط المشاهدة: '+baseURL().href)}};
+ $('reset-story').onclick=()=>{if(confirm('حذف المسودة المحلية المشفّرة فقط؟ النسخة المنشورة لن تتغير.')){try{localStorage.removeItem(KEY)}catch{}location.reload()}};
+ $('admin-exit').onclick=()=>location.reload();
+ window.addEventListener('pageshow',e=>{if(e.persisted)location.reload()});
  if(err)status(err);
 }
 function finishStory(c){
@@ -3208,15 +3236,32 @@ function finishStory(c){
  document.querySelectorAll('[data-photo]').forEach(img=>{if(!c.couple[img.dataset.photo])img.src=HEART;img.alt='صورة شخصية'});
  document.querySelectorAll('#memories-timeline-container img').forEach((img,i)=>{if(!c.memories[i]?.image)img.src=HEART});
  for(const a of document.querySelectorAll('a[href^="#"]')){if(a.getAttribute('href')==='#welcome-screen')continue;a.addEventListener('click',ev=>{const section=document.getElementById(a.getAttribute('href').slice(1));if(section){ev.preventDefault();section.scrollIntoView({behavior:'smooth'})}})}
- if(window.storyEditable){for(const parent of [$('welcome-screen'),document.querySelector('#main-experience header>div:last-child')]){const a=document.createElement('a');a.className='story-edit';const u=baseURL();u.search='?edit=1';a.href=u.href;a.textContent='تعديل البيانات';parent.append(a)}}
+ 
 }
-function bootStory(){
- const edit=new URLSearchParams(location.search).has('edit'), shared=location.hash.startsWith('#story=');
- let c=null, err='';
- try{if(shared)c=normalize(decodeStory(location.hash.slice(7)));else if(!edit)c=normalize(JSON.parse($('embedded-story').textContent))||loadDraft();if(shared&&!c)throw Error('رابط الحكاية غير صحيح أو غير مكتمل.')}catch(e){err=e.message;c=null}
- if(!c||edit){setupEditor(loadDraft(),err);return}
- window.storyEditable=!shared&&$('embedded-story').textContent.trim()==='null';
- window.LoveStoryConfig=c;$('setup-page').hidden=true;$('welcome-screen').hidden=false;$('main-experience').hidden=false;initLoveStory();
+async function bootStory(){
+ const params=new URLSearchParams(location.search),edit=params.has('edit'),preview=params.has('preview');
+ $('setup-page').hidden=true;$('welcome-screen').hidden=true;$('main-experience').hidden=true;
+ localVault=readLocal();
+ try{checkCrypto();if(!preview)publishedVault=await fetchVault()}catch(e){lockStatus('تعذر فتح الحكاية: '+e.message);return}
+ const active=edit?(localVault||publishedVault):preview?localVault:publishedVault;
+ const setup=edit&&!active&&remoteMissing;
+ $('lock-title').textContent=edit?(setup?'إنشاء كلمات المرور':'دخول الإدارة'):'حكايتنا الخاصة';
+ $('lock-description').textContent=edit?'لوحة إعدادات خاصة بصاحب الموقع.':'اكتبي كلمة المرور علشان تفتحي حكايتنا.';
+ $('lock-back').hidden=!edit&&!preview;
+ if(!active&&!setup){lockStatus(preview?'لا توجد مسودة مشفّرة للمعاينة.':'لم تُنشر الحكاية الخاصة بعد.');return}
+ $('lock-create').hidden=!setup;
+ $('lock-password').minLength=12;$('lock-password').maxLength=200;
+ $('lock-password').autocomplete=setup?'new-password':'current-password';
+ if(setup){$('lock-label').firstChild.nodeValue='كلمة مرور الإدارة';for(const id of ['lock-confirm','lock-view-password','lock-view-confirm']){$(id).required=true;$(id).minLength=12;$(id).maxLength=200}}
+ $('lock-submit').textContent=setup?'إنشاء الحماية وفتح الإدارة':edit?'فتح الإدارة':'فتح الحكاية';
+ $('lock-form').hidden=false;lockStatus(setup?'الإعداد الأول محلي. نشر الحكاية يتطلب صلاحية الكتابة على GitHub.':'');
+ $('lock-form').onsubmit=async ev=>{ev.preventDefault();const b=$('lock-submit');if(b.disabled)return;b.disabled=true;const p=$('lock-password').value;try{
+  checkCrypto();lockStatus('جاري التحقق…');
+  if(setup){const v=$('lock-view-password').value;if(!passStrong(p)||!passStrong(v)||p===v||p!==$('lock-confirm').value||v!==$('lock-view-confirm').value)throw Error('كلمتا مرور مختلفتان وقويتان والتأكيد مطابق.');adminPassword=p;viewerPassword=v;
+   let legacy=null;try{legacy=normalize(JSON.parse(localStorage.getItem(LEGACY_KEY)))}catch{}
+   setupEditor(legacy,legacy?'تم استيراد المسودة القديمة من جهازك. احفظها مشفّرة لإزالة النسخة القديمة.':'');return}
+  if(edit){const opened=await unseal(active.admin,p,'admin');const story=normalize(opened?.story);if(!story||!passStrong(opened.viewerPassword)||p===opened.viewerPassword)throw Error('بيانات الإدارة غير صالحة.');adminPassword=p;viewerPassword=opened.viewerPassword;setupEditor(story,'');return}
+  const opened=await unseal(active.viewer,p,'viewer');unlockView(opened,preview);
+ }catch(e){lockStatus(e.message);$('lock-password').value='';$('lock-password').focus()}finally{b.disabled=false}};
 }
-
 </script></body></html>
