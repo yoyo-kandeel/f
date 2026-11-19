@@ -2198,7 +2198,7 @@ body {
 .private-lock{min-height:100dvh;display:grid;place-items:center;padding:24px;position:relative;z-index:70;background:radial-gradient(ellipse at top,#4A0E17,#1A0609 75%)}
 .private-card{width:min(100%,420px);padding:32px 25px;border:1px solid #D4AF3766;border-radius:28px;background:#25090de6;text-align:center;box-shadow:0 24px 70px #0007}
 .private-card h1{font-size:27px;font-weight:800;color:#F9EAE1;margin:8px 0}.private-card p{line-height:1.8}.private-heart{font-size:64px;line-height:1.2;color:#D4AF37;text-shadow:0 0 28px #D4AF3755}
-.private-card form{display:grid;gap:15px;margin-top:24px;text-align:right}.private-card form button{margin-top:4px;width:100%}.private-card #lock-create{display:grid;gap:12px}.private-note{color:#F3E5AB;font-size:12px;line-height:1.85;display:block;margin-top:12px}.private-card input{width:100%}.lock-exit{position:fixed;z-index:45;left:14px;top:14px;padding:8px 14px;border:1px solid #D4AF3777;background:#1A0609;color:#F3E5AB;border-radius:99px;font-size:12px}.private-admin-info{font-size:13px;color:#F3E5AB;margin:12px 0}
+.private-card form{display:grid;gap:15px;margin-top:24px;text-align:right}.private-card form button{margin-top:4px;width:100%}.private-card #lock-create{display:grid;gap:12px}.private-note{color:#F3E5AB;font-size:12px;line-height:1.85;display:block;margin-top:12px}.private-card input{width:100%}.lock-exit{position:fixed;z-index:65;left:14px;top:14px;padding:8px 14px;border:1px solid #D4AF3777;background:#1A0609;color:#F3E5AB;border-radius:99px;font-size:12px}.private-admin-info{font-size:13px;color:#F3E5AB;margin:12px 0}
 </style></head>
 <body class="bg-burgundy-deep text-blush min-h-screen relative selection:bg-dusty-rose selection:text-blush font-body">
 <section id="private-lock" class="private-lock"><div class="private-card"><div class="font-script text-gold-light" style="font-size:32px">Our Love Story</div><div class="private-heart" aria-hidden="true">♡</div><h1 id="lock-title">حكايتنا الخاصة</h1><p id="lock-description">حكاية مش لأي حد…</p><form id="lock-form" hidden><label class="setup-field" id="lock-label">كلمة المرور<input id="lock-password" type="password" required autocomplete="current-password"></label><div id="lock-create" hidden><label class="setup-field">تأكيد كلمة مرور الإدارة<input id="lock-confirm" type="password" autocomplete="new-password"></label><label class="setup-field">كلمة مرور المشاهدة<input id="lock-view-password" type="password" autocomplete="new-password"></label><label class="setup-field">تأكيد كلمة مرور المشاهدة<input id="lock-view-confirm" type="password" autocomplete="new-password"></label><p class="private-note">استخدم كلمتي مرور مختلفتين وقويتين (١٢ حرفًا على الأقل). احتفظ بهما؛ لا توجد إمكانية لاستردادهما.</p></div><button class="setup-action setup-primary" id="lock-submit" type="submit">فتح الحكاية</button></form><p id="lock-status" class="setup-status" role="status" aria-live="polite">جاري التحقق من البيانات المشفّرة…</p><a id="lock-back" class="private-note" href="./" hidden>العودة إلى صفحة المشاهدة</a></div></section><noscript><p style="text-align:center;padding:30px">يلزم تفعيل JavaScript لفك تشفير الحكاية في متصفحك.</p></noscript>
@@ -3219,7 +3219,6 @@ function setupEditor(draft,err){
  const vault=await makeVault(d,a,v);const saved=writeLocal(vault);if(enforceLocal&&!saved)throw Error('تعذر حفظ المسودة في المتصفح. نزّل story.json مباشرة بدلًا من المعاينة.');
  if(saved){try{localStorage.removeItem(LEGACY_KEY)}catch{}}
  adminPassword=a;viewerPassword=v;localVault=vault;for(const id of ['new-admin-password','new-admin-confirm','new-view-password','new-view-confirm'])$(id).value='';return {vault,saved}}
- function busy(on){$('story-form').querySelectorAll('button,input,textarea').forEach(el=>{if(on){if(!el.disabled){el.dataset.busy='1';el.disabled=true}}else if(el.dataset.busy){el.disabled=false;delete el.dataset.busy}})}
  $('story-form').onsubmit=async ev=>{ev.preventDefault();if(adminPending)return;adminPending=true;try{status('جاري التشفير والحفظ…');const out=await save();const u=baseURL();u.search='?preview=1';location.href=u.href}catch(e){status(e.message)}finally{adminPending=false}};
  $('export-story').onclick=async()=>{if(adminPending)return;adminPending=true;try{status('جاري تجهيز ملف النشر المشفّر…');const {vault,saved}=await save(false);const blob=new Blob([JSON.stringify(vault)],{type:'application/json'});const u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download='story.json';a.click();setTimeout(()=>URL.revokeObjectURL(u),30000);status('تم تنزيل story.json المشفّر. ارفعه إلى جذر المشروع واستبدل الملف القديم، ثم انتظر اكتمال نشر GitHub Pages.'+(saved?'':' لم تُحفظ نسخة محلية بسبب مساحة المتصفح.'))}catch(e){status(e.message)}finally{adminPending=false}};
  $('copy-share').onclick=async()=>{try{await navigator.clipboard.writeText(baseURL().href);status('تم نسخ رابط المشاهدة. أرسل كلمة مرور المشاهدة بشكل منفصل.')}catch{status('رابط المشاهدة: '+baseURL().href)}};
@@ -3227,6 +3226,7 @@ function setupEditor(draft,err){
  $('admin-exit').onclick=()=>location.reload();
  window.addEventListener('pageshow',e=>{if(e.persisted)location.reload()});
  if(err)status(err);
+ const a=document.createElement('a');a.className='private-note';const u=baseURL();u.search='?edit=1&published=1';a.href=u.href;a.textContent='فتح النسخة المنشورة بدل المسودة المحلية';$('setup-status').after(a);
 }
 function finishStory(c){
  const date=document.createElement('p');date.className='text-gold-light text-body-sm text-center mb-3';const day=c.couple.startLocal?.slice(0,10)||c.couple.storyStartDate.slice(0,10);date.textContent='بداية حكايتنا: '+day;date.dir='auto';$('counter-days').parentElement.parentElement.before(date);
@@ -3243,8 +3243,8 @@ async function bootStory(){
  $('setup-page').hidden=true;$('welcome-screen').hidden=true;$('main-experience').hidden=true;
  localVault=readLocal();
  try{checkCrypto();if(!preview)publishedVault=await fetchVault()}catch(e){lockStatus('تعذر فتح الحكاية: '+e.message);return}
- const active=edit?(localVault||publishedVault):preview?localVault:publishedVault;
- const setup=edit&&!active&&remoteMissing;
+ const preferPublished=params.has('published');const active=edit?(preferPublished?publishedVault:(localVault||publishedVault)):preview?localVault:publishedVault;
+ const setup=edit&&!active&&remoteMissing&&!preferPublished&&!localVault;
  $('lock-title').textContent=edit?(setup?'إنشاء كلمات المرور':'دخول الإدارة'):'حكايتنا الخاصة';
  $('lock-description').textContent=edit?'لوحة إعدادات خاصة بصاحب الموقع.':'اكتبي كلمة المرور علشان تفتحي حكايتنا.';
  $('lock-back').hidden=!edit&&!preview;
