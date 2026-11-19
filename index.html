@@ -3209,6 +3209,30 @@ async function fetchVault(){const r=await fetch(new URL('story.json',baseURL()),
 function lockStatus(t){$('lock-status').textContent=t}
 function hideLock(){$('private-lock').hidden=true;$('lock-form').reset()}
 function unlockView(c,preview=false){const story=normalize(c);if(!story)throw Error('بيانات الحكاية غير صالحة.');hideLock();window.storyEditable=false;window.LoveStoryConfig=story;$('setup-page').hidden=true;$('welcome-screen').hidden=false;$('main-experience').hidden=false;initLoveStory();const exit=document.createElement('button');exit.className='lock-exit';exit.type='button';exit.textContent='قفل الحكاية';exit.onclick=()=>location.reload();document.body.append(exit);window.addEventListener('pageshow',e=>{if(e.persisted)location.reload()});if(preview){const p=document.createElement('p');p.className='private-note';p.textContent='معاينة المسودة المحلية — لم تُنشر بعد';$('welcome-screen').append(p)}}
+// Generic romantic text requested by the site owner; no personal data.
+const ROMANTIC_SUGGESTIONS={"reasons":[{"title":"بحب ضحكتك","description":"ضحكتك عندي كفيلة تصلح يوم كامل، مهما كان فيه من تعب وضغط."},{"title":"بحب تفاصيلك","description":"كلامك وطريقتك وكسوفك وحتى عنادك، كل تفصيلة فيكي ليها مكان خاص في قلبي."},{"title":"بحب الأمان معاكي","description":"معاكي بحس إني مش محتاج أكون حد غير نفسي، وإن قلبي أخيرًا لقى مكانه."},{"title":"بحب اهتمامك","description":"أبسط سؤال منك عن يومي بيفرق معايا أكتر مما تتخيلي."},{"title":"بحب وجودك","description":"وجودك في حياتي خلاني أحب تفاصيل الأيام العادية وأستنى بكرة."},{"title":"بحب روحك","description":"جمالك شدني، لكن روحك هي اللي خلتني أتمنى أكمل عمري معاكي."},{"title":"بحب عفويتك","description":"بحبك وإنتي على طبيعتك، من غير ترتيب ولا تصنع ولا مجهود."},{"title":"بحبك علشان إنتي","description":"مش محتاج سبب معين علشان أحبك، كفاية إنك إنتي بكل تفاصيلك."}],"letters":[{"category":"افتحي لما تكوني زعلانة","content":"يا حبيبتي، لو الدنيا ضايقتك في يوم، افتكري إن فيه حد نفسه يشيل عنك كل حاجة بتوجع قلبك. مش لازم تبقي قوية طول الوقت، ومش لازم تواجهي كل حاجة لوحدك. أنا نفسي أكون الشخص اللي ترتاحي معاه وتحكيله من غير خوف، وتلاقي عنده الأمان والحنية اللي تستاهليهم."},{"category":"افتحي لما تشتاقيلي","content":"لو كنتي بتقرئي الرسالة دي علشان وحشتك، فأنا غالبًا في نفس اللحظة بفكر فيكي. نفسي المسافات تختفي، وألاقيكي قدامي ونقعد نتكلم في كل حاجة ومن غير ما نحس بالوقت. لحد ما اللحظة دي تيجي، افتكري إن ليكي مكان في قلبي مهما كنت بعيد عنك."},{"category":"افتحي لما تكوني مبسوطة","content":"يارب أشوفك دايمًا بالضحكة اللي بحبها دي، وأشوف كل حاجة نفسك فيها بتتحقق قدام عينيكي. أنا مش بس نفسي أكون جنبك في الأيام الصعبة، أنا نفسي أشاركك كل نجاح وكل فرحة وكل لحظة حلوة في حياتك."},{"category":"افتحي لما نختلف","content":"ممكن نختلف وممكن نزعل من بعض، لكن عمر الخلاف ما يقلل من مكانتك عندي. إحنا مش مطلوب مننا نكون مثاليين، المطلوب إننا نفهم بعض ونحافظ على بعض ونتعلم من أخطائنا. وأنا دايمًا أتمنى إن حبنا يكون أكبر من أي خلاف بينا."},{"category":"افتحي لما تحبي تعرفي إنتي بالنسبالي إيه","content":"إنتي مش مجرد شخص بحبه، إنتي حد نفسي أشاركه تفاصيل عمري كلها. نفسي أحكيلك عن يومي، وأسمع منك عن يومك، وأفرح بنجاحك، وأكون جنبك في تعبك. إنتي جزء جميل من أحلامي ومن كل حاجة حلوة بتمنى ربنا يكتبها ليا."}],"dreams":[{"title":"بيتنا الصغير","description":"يبقى لينا بيت مليان حب وراحة وضحك، نرجعله من زحمة الدنيا ونلاقي فيه بعض."},{"title":"أول سفرية سوا","description":"نسافر ونكتشف أماكن جديدة ونرجع بصور وذكريات نحكي عنها طول عمرنا."},{"title":"نحقق أحلام بعض","description":"أشوفك بتوصلي لكل حاجة نفسك فيها، ونفضل سند لبعض في كل خطوة."},{"title":"عمرة سوا","description":"ربنا يرزقنا زيارة بيته الحرام، وندعي بكل اللي نفسنا فيه وإحنا جنب بعض."},{"title":"نكبر سوا","description":"يعدي العمر ونفضل بنفس المحبة، ونفتكر بدايتنا ونضحك على تفاصيلها."},{"title":"حياة مليانة بركة","description":"ربنا يجمعنا في الحلال ويكتب لنا حياة فيها مودة ورحمة وراحة بال."}],"extra":{"secretMessage":"عارفة إيه أحلى مفاجأة حصلتلي في حياتي؟ إنتي.\n\nيمكن الموقع ده هدية بسيطة، بس الهدية الحقيقية بالنسبالي هي إني عرفتك، وإن وسط كل الناس والصدف والأيام، ربنا خلّى طريقنا يقابل بعض.\n\nأنا مش بوعدك إن كل أيامنا هتكون مثالية، لكن بتمنى أفضل دايمًا الشخص اللي يحافظ على قلبك ويقدّر وجودك ويفرح بكل تفصيلة فيكي.\n\nبحبك النهارده، ونفسي أفضل أحبك كل يوم بطريقة أجمل من اليوم اللي قبله. ❤️","giftCode":"YOU-ARE-MY-HOME","musicTitle":"A Thousand Years – Christina Perri (Piano Version)"}};
+function fillRomanticSuggestions(){
+ let added=0;
+ for(const group of ['reasons','letters','dreams']){
+  const root=$(group+'-fields');
+  if(!root)continue;
+  const rows=Array.from(root.children);
+  const key=group==='letters'?'category':'title';
+  const existing=new Set(rows.map(row=>readFields(row)[key]).filter(Boolean));
+  for(const item of ROMANTIC_SUGGESTIONS[group]){
+   if(existing.has(item[key]))continue;
+   const blank=Array.from(root.children).find(row=>Object.values(readFields(row)).every(value=>!value));
+   if(blank){for(const [k,v] of Object.entries(item)){const input=blank.querySelector('[data-field="'+k+'"]');if(input)input.value=v;}}
+   else addRow(group,item);
+   existing.add(item[key]);added++;
+  }
+ }
+ for(const [k,v] of Object.entries(ROMANTIC_SUGGESTIONS.extra)){
+  const input=$('extra-fields').querySelector('[data-field="'+k+'"]');
+  if(input&&!input.value.trim())input.value=v;
+ }
+ return added;
+}
 function setupEditor(draft,err){
  hideLock();$('setup-page').hidden=false;$('welcome-screen').hidden=true;$('main-experience').hidden=true;
  const c={...(draft?.couple||{})};c.startDate=c.startLocal?.slice(0,10)||'';c.startTime=c.startLocal?.slice(11,16)||'';for(const spec of FIELDS.couple)$('couple-fields').append(field(spec,c[spec[0]]));
@@ -3216,6 +3240,12 @@ function setupEditor(draft,err){
  for(const spec of FIELDS.extra)$('extra-fields').append(field(spec,e[spec[0]]));
  for(const g of groups)for(const item of draft?.[g]||[])addRow(g,item);
  document.querySelectorAll('[data-add]').forEach(b=>b.onclick=()=>addRow(b.dataset.add));
+ const presetButton=document.createElement('button');presetButton.type='button';presetButton.className='pill secondary';presetButton.textContent='♥ إضافة أسباب الحب والرسائل والأحلام الجاهزة';
+ const presetHelp=document.createElement('p');presetHelp.className='muted';presetHelp.textContent='يضيف النصوص المتفق عليها دون استبدال بياناتك أو رسائلك الحالية.';
+ presetButton.onclick=()=>{try{fillRomanticSuggestions();status('تمت تعبئة النصوص الجاهزة. احفظ المسودة عند الانتهاء.');presetHelp.textContent='تمت التعبئة. يمكنك تعديل النصوص ثم الحفظ.';}catch(e){status(e.message)}};
+ const reasons=$('reasons-fields');reasons.before(presetButton,presetHelp);
+ if(!draft){fillRomanticSuggestions();presetHelp.textContent='تم ملء النصوص الجاهزة تلقائيًا. يمكنك تعديلها قبل الحفظ.';}
+
  async function save(enforceLocal=true){const d=collect();let a=adminPassword,v=viewerPassword;const ap=$('new-admin-password').value,ac=$('new-admin-confirm').value,vp=$('new-view-password').value,vc=$('new-view-confirm').value;
  if(ap||ac){if(!passStrong(ap)||ap!==ac)throw Error('تأكد من كلمة مرور الإدارة الجديدة وتأكيدها (٦ أرقام فقط).');a=ap}
  if(vp||vc){if(!passStrong(vp)||vp!==vc)throw Error('تأكد من كلمة مرور المشاهدة الجديدة وتأكيدها (٦ أرقام فقط).');v=vp}
